@@ -4,7 +4,7 @@ function About() {
       <div className="h-44 w-44">
         <img
           className="border-2 border-pink-500 rounded-full h-full w-full object-cover"
-          src="./src/assets/pexels-moh-adbelghaffar-771742.jpg"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmh903RuvBCgjlWDeCFJehx7Xu6FJNu4ADCw&s"
           alt="portfolio_image"
         />
       </div>
