@@ -1,4 +1,5 @@
 import { FaPython, FaJs,FaNodeJs, FaCss3Alt, FaHtml5, FaReact, FaCode } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function About() {
   const skills = [
@@ -44,6 +45,13 @@ function About() {
           ))}
         </div>
       </div>
+      <button className='mt-10 bg-pink-500 text-white px-6 py-2 rounded-lg transition duration-300 hover:bg-pink-400'>
+        <Link to="/">
+          <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">
+            Go back
+          </span>
+        </Link>
+      </button>
     </div>
   );
 }
