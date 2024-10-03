@@ -1,39 +1,29 @@
-import { Link } from 'react-router-dom';
 import { FaHome, FaUser, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
 
 function Navbar() {
   return (
-    <nav className="bg-gray-900 text-white p-4 fixed w-full z-10">
+    <nav className="bg-gray-900 p-4 fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-lg font-bold">Eustache Kamala</div>
+        <div className="text-white font-bold text-xl">
+          Eustache Kamala
+        </div>
         <div className="flex space-x-6">
-          {/* Mobile Icons Only */}
-          <Link to="/" className="flex items-center space-x-1 md:hidden">
-            <FaHome />
-          </Link>
-          <Link to="/About" className="flex items-center space-x-1 md:hidden">
-            <FaUser />
-          </Link>
-          <Link to="/Projects" className="flex items-center space-x-1 md:hidden">
-            <FaProjectDiagram />
-          </Link>
-          <Link to="/Contacts" className="flex items-center space-x-1 md:hidden">
-            <FaEnvelope />
-          </Link>
-
-          {/* Desktop Text and Icons */}
-          <Link to="/" className="hidden md:flex items-center hover:text-pink-500">
-            <FaHome className="mr-1" /> Home
-          </Link>
-          <Link to="/About" className="hidden md:flex items-center hover:text-pink-500">
-            <FaUser className="mr-1" /> About
-          </Link>
-          <Link to="/Projects" className="hidden md:flex items-center hover:text-pink-500">
-            <FaProjectDiagram className="mr-1" /> Projects
-          </Link>
-          <Link to="/Contacts" className="hidden md:flex items-center hover:text-pink-500">
-            <FaEnvelope className="mr-1" /> Contacts
-          </Link>
+          <a href="#welcome" className="text-white hover:text-pink-500 transition duration-300 flex items-center">
+            <FaHome className="w-5 h-5" />
+            <span className="hidden md:inline ml-1">Home</span>
+          </a>
+          <a href="#about" className="text-white hover:text-pink-500 transition duration-300 flex items-center">
+            <FaUser className="w-5 h-5" />
+            <span className="hidden md:inline ml-1">About</span> 
+          </a>
+          <a href="#projects" className="text-white hover:text-pink-500 transition duration-300 flex items-center">
+            <FaProjectDiagram className="w-5 h-5" />
+            <span className="hidden md:inline ml-1">Projects</span> 
+          </a>
+          <a href="#contact" className="text-white hover:text-pink-500 transition duration-300 flex items-center">
+            <FaEnvelope className="w-5 h-5" />
+            <span className="hidden md:inline ml-1">Contact</span>
+          </a>
         </div>
       </div>
     </nav>
