@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="bg-gray-900 text-white p-4 fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-lg font-bold">My Portfolio</div>
+        <div className="text-lg font-bold">Eustache Kamala</div>
         <div className="flex space-x-6">
           {/* Mobile Icons Only */}
           <Link to="/" className="flex items-center space-x-1 md:hidden">
@@ -17,7 +17,7 @@ function Navbar() {
           <Link to="/Projects" className="flex items-center space-x-1 md:hidden">
             <FaProjectDiagram />
           </Link>
-          <Link to="/Contact" className="flex items-center space-x-1 md:hidden">
+          <Link to="/Contacts" className="flex items-center space-x-1 md:hidden">
             <FaEnvelope />
           </Link>
 
@@ -31,8 +31,8 @@ function Navbar() {
           <Link to="/Projects" className="hidden md:flex items-center hover:text-pink-500">
             <FaProjectDiagram className="mr-1" /> Projects
           </Link>
-          <Link to="/Contact" className="hidden md:flex items-center hover:text-pink-500">
-            <FaEnvelope className="mr-1" /> Contact
+          <Link to="/Contacts" className="hidden md:flex items-center hover:text-pink-500">
+            <FaEnvelope className="mr-1" /> Contacts
           </Link>
         </div>
       </div>

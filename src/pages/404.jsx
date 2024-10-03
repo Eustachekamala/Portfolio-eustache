@@ -11,7 +11,7 @@ function NotFound() {
       />
       <p className="text-xl sm:text-2xl mb-6">Page not found</p>
       <Link to="/" className="bg-pink-500 text-white px-6 py-3 rounded-lg transition duration-300 hover:bg-pink-400">
-        Go Back to Home
+        Go Back
       </Link>
     </div>
   );

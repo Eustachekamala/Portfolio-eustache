@@ -1,7 +1,7 @@
 import gsap from 'gsap';
-import { Link } from 'react-router-dom';
 import { useRef, useLayoutEffect } from 'react';
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 function Home() {
   const componentRef = useRef(null);
@@ -36,14 +36,8 @@ function Home() {
           with data-driven insights. I am passionate about code quality and continuous 
           learning, ensuring that I deliver exceptional results.
         </p>
-        <button className="mt-4 bg-pink-500 text-white px-6 py-2 rounded-lg transition duration-300 hover:bg-pink-400">
-          <Link to="/About">
-            <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">
-              About Me
-            </span>
-          </Link>
-        </button>
       </div>
+      <Footer />
     </div>
   );
 }
