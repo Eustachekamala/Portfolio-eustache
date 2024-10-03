@@ -1,31 +1,12 @@
-
-import { Link } from 'react-router-dom';
-
 function Footer() {
     return (
         <footer className="bg-gray-900 text-white py-6">
             <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
-                <div className="mb-4 md:mb-0">
+                <div className="mb-4 md:mb-0 text-center md:text-left">
                     <h2 className="text-xl font-bold">Eustache Kamala</h2>
                     <p className="text-sm">© {new Date().getFullYear()} Copyright Eustache Kamala</p>
                 </div>
-                <nav className="mb-4 md:mb-0">
-                    <ul className="flex space-x-6">
-                        <li>
-                            <Link to="/" className="hover:text-pink-500 transition duration-300">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/about" className="hover:text-pink-500 transition duration-300">About</Link>
-                        </li>
-                        <li>
-                            <Link to="/projects" className="hover:text-pink-500 transition duration-300">Projects</Link>
-                        </li>
-                        <li>
-                            <Link to="/contact" className="hover:text-pink-500 transition duration-300">Contact</Link>
-                        </li>
-                    </ul>
-                </nav>
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 mt-4 md:mt-0">
                     <a href="https://github.com/eustachekamala" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition duration-300">
                         <img src="https://img.icons8.com/ios-filled/50/FFFFFF/github.png" alt="GitHub" className="w-6 h-6" />
                     </a>

@@ -1,5 +1,6 @@
 
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 function Contacts() {
     return (
@@ -11,6 +12,7 @@ function Contacts() {
                 </h1>
                 <p>You can find me on the following social media platforms:</p>
             </div>
+            <Footer />
         </>
     )
 }

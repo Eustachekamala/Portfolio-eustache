@@ -1,4 +1,5 @@
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 function Projects() {
     return (
         <>
@@ -32,6 +33,7 @@ function Projects() {
                     ))}
                 </div>
             </div>
+            <Footer />
         </>
     );
 }

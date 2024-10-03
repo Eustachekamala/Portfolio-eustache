@@ -1,5 +1,6 @@
 import { useSpring, animated } from 'react-spring';
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 function About() {
   const skills = [
@@ -83,6 +84,7 @@ function About() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
