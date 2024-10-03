@@ -31,7 +31,7 @@ function About() {
   return (
     <>
       <div id="about"  className="flex flex-col pt-10 items-center justify-center text-white bg-gray-950">
-        <h1  className='text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mt-10'>
+        <h1  className='text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mt-10 mb-10'>
           About
         </h1>
         <div className="mt-10 w-11/12 pt-24 pb-24 border border-gray-600 rounded-lg p-8">
