@@ -1,6 +1,6 @@
 function Projects() {
     return (
-        <div id="projects"  className="bg-gray-950 min-h-screen pt-10 text-white p-4 flex flex-col justify-center items-center pb-16">
+        <div id="projects"  className="bg-gray-950 min-h-screen pt-10 text-white p-4 flex flex-col justify-center items-center">
             <h1  className="text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mt-10 mb-10">
                 Projects
             </h1>

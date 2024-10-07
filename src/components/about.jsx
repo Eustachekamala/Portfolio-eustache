@@ -3,16 +3,16 @@ function About() {
   const skills = [
     { name: 'Python', icon: 'https://img.icons8.com/color/48/000000/python--v1.png', level: 80 },
     { name: 'JavaScript', icon: 'https://img.icons8.com/color/48/000000/javascript--v1.png', level: 90 },
-    { name: 'Flask', icon: 'https://img.icons8.com/ios-filled/50/FFFFFF/flask.png', level: 70 },
+    { name: 'Flask', icon: 'https://img.icons8.com/ios-filled/50/FFFFFF/flask.png', level: 60 },
     { name: 'Tailwind', icon: 'https://img.icons8.com/color/48/000000/tailwindcss.png', level: 85 },
     { name: 'TypeScript', icon: 'https://img.icons8.com/color/48/000000/typescript.png', level: 75 },
-    { name: 'Node.js', icon: 'https://img.icons8.com/color/48/000000/nodejs.png', level: 80 },
+    { name: 'Node.js', icon: 'https://img.icons8.com/color/48/000000/nodejs.png', level: 60 },
     { name: 'C++', icon: 'https://img.icons8.com/color/48/000000/c-plus-plus-logo.png', level: 60 },
     { name: 'HTML', icon: 'https://img.icons8.com/color/48/000000/html-5.png', level: 90 },
     { name: 'CSS', icon: 'https://img.icons8.com/color/48/000000/css3.png', level: 85 },
     { name: 'React', icon: 'https://img.icons8.com/color/48/000000/react-native.png', level: 85 },
-    { name: 'Docker', icon: 'https://img.icons8.com/color/48/000000/docker.png', level: 75 },
-    { name: 'Next.js', icon: 'https://img.icons8.com/color/48/000000/nextjs.png', level: 70 },
+    { name: 'Docker', icon: 'https://img.icons8.com/color/48/000000/docker.png', level: 65 },
+    { name: 'Next.js', icon: 'https://img.icons8.com/color/48/000000/nextjs.png', level: 55 },
     { name: 'Java', icon: 'https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png', level: 80 },
   ];
 
