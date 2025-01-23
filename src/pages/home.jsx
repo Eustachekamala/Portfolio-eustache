@@ -27,7 +27,7 @@ function Home() {
       <Navbar />
       <div className='flex flex-col md:flex-row w-full pt-20 p-4'>
         <div className='flex flex-col py-8 justify-center items-center bg-gray-950 text-center pt-36 w-full md:w-2/5 border border-red-500'>
-          <img src="michel.jpg" alt="michel" className="w-32 h-full rounded-full overflow-hidden shadow-lg" />
+          <img src="eustache.jpg" alt="michel" className="w-32 h-full rounded-full overflow-hidden shadow-lg" />
           <p className="text-3xl text-white font-semibold py-4">Hi, I&apos;m Eustache</p>
           <p className='text-lg sm:text-xl md:text-2xl p-4 mb-4 text-gray-100 font-spaceGrotesk'>
             I&apos;m a Full-Stack Engineer with a passion for building scalable and user-friendly applications. 
