@@ -25,24 +25,24 @@ function Home() {
   return (
     <div className="relative bg-gray-950" ref={componentRef}>
       <Navbar />
-      <div className="flex flex-col md:flex-row w-full pt-20 p-4">
-        <div className="flex flex-col py-8 justify-center items-center bg-gray-950 text-center pt-16 md:pt-36 w-full md:w-2/5">
+      <div className="flex flex-col md:flex-row w-full">
+        <div className="flex flex-col  justify-center items-center bg-gray-950 text-center pt-20 md:pt-36 w-full md:w-2/5">
           <img
             src="eustache.jpg"
             alt="michel"
             className="w-56 h-56 md:w-96 md:h-96 rounded-full overflow-hidden shadow-lg"
           />
-          <p className="text-2xl md:text-3xl text-white font-semibold py-4 md:py-8">
-            Hi, I&apos;m Eustache
+          <p className="text-2xl md:text-3xl text-white font-semibold py-8">
+            Hi, I&apos;m Eustache Kamala
           </p>
         </div>
 
         <div
           id="welcome"
-          className="flex flex-col py-8 justify-center items-center bg-gray-950 text-center pt-16 md:pt-36 w-full md:w-3/5"
+          className="flex flex-col py-8 justify-center items-center bg-gray-950 text-center pt-4 md:pt-36 w-full md:w-3/5"
         >
-          <p className="text-base sm:text-lg md:text-2xl p-4 mb-4 text-gray-100 font-spaceGrotesk">
-            I&apos;m a Full-Stack Engineer with a passion for building scalable and user-friendly applications.
+          <p className="text-base sm:text-lg md:text-2xl mb-4 text-gray-100 font-spaceGrotesk">
+            A Full-Stack Engineer with a passion for building scalable and user-friendly applications.
             I&apos;m excited to bring my expertise to the tech industry and contribute to the growth of the industry.
           </p>
           <a
