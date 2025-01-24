@@ -30,11 +30,11 @@ function About() {
 
   return (
     <>
-      <div id="about"  className="flex flex-col pt-10 items-center justify-center text-white bg-gray-950">
-        <h1  className='text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mt-10 mb-10'>
+      <div id="about"  className="flex flex-col p-4 items-center justify-center text-white bg-gray-950">
+        <h1  className='text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-4'>
           About
         </h1>
-        <div className="mt-10 w-11/12 pt-24 pb-24 border border-gray-600 rounded-lg p-8">
+        <div className="w-11/12  border border-gray-600 rounded-lg p-8">
           <h2 className="text-2xl font-bold mb-4">Skills</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {animatedSkills.map((skill, index) => (
