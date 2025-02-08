@@ -28,7 +28,7 @@ function Home() {
       <div className="flex flex-col md:flex-row w-full">
         <div className="flex flex-col  justify-center items-center bg-gray-950 text-center pt-20 md:pt-36 w-full md:w-2/5">
           <img
-            src="eustache.jpg"
+            src="Eustache.jpg"
             alt="michel"
             className="w-56 h-56 md:w-96 md:h-96 rounded-full overflow-hidden shadow-lg"
           />
