@@ -19,7 +19,7 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
+          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-luminosity absolute"
         >
           <Image
             src="/assets/eustache.png"
@@ -27,7 +27,7 @@ const Photo = () => {
             quality={100}
             fill
             alt=""
-            className="object-contain"
+            className="object-contain rounded-full opacity-56"
           />
         </motion.div>
       </motion.div>
