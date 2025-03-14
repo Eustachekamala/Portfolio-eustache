@@ -7,7 +7,6 @@ import {
   FaReact,
   FaFigma,
   FaPython,
-  FaFlask,
 } from "react-icons/fa";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
@@ -22,7 +21,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 
 //about data
-const data = {
+const about = {
   title: "About me",
   description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
   info: [
@@ -89,7 +88,7 @@ const experience = {
 // education
 const education = {
   icon: "/assets/resume/cap.svg",
-  title: "My Experience",
+  title: "My Education",
   description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
   items: [
     {
@@ -160,11 +159,7 @@ const skills = {
     {
       icon: <FaPython />,
       name: "python",
-    },
-    {
-      icon: <FaFlask />,
-      name: "flask",
-    },
+    }
   ],
 };
 
@@ -241,22 +236,43 @@ const Resume = () => {
             {/**Skils */}
             <TabsContent className="w-full" value="skills">
               <div className="flex flex-col gap-[30px]">
-                <div>
-                  <h3>{skills.title}</h3>
-                  <p>{skills.description}</p>
+                <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                  <h3 className="text-4xl font-bold">{skills.title}</h3>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
                 </div>
-                <ul>
+                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
                   { skills.skillList.map((skill, index) => {
-                    return <li className="flex items-center gap-2" key={index}>
-                      {skill.icon}
-                      {skill.name}
+                    return <li className="flex items-center gap-4" key={index}>
+                      <TooltipProvider delayDuration={100}>
+                        <Tooltip>
+                          <TooltipTrigger className="w-full h-[100px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                            <div className="text-5xl group-hover:text-accent-500 transition-all duration-500">{skill.icon}</div>
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p className="text-primary uppercase bg-white px-4 rounded-lg">{skill.name}</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
                     </li>
                   })}
                 </ul>
               </div>
             </TabsContent>
             {/**About me */}
-            <TabsContent className="w-full" value="about">About me</TabsContent>
+            <TabsContent className="w-full text-center xl:text-left" value="about">
+              <div className="flex flex-col gap-[30px]">
+                <h3 className="text-4xl font-bold">{about.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[700px] mx-auto xl:mx-0">
+                  {about.info.map((item, index) => {
+                    return <li key={index} className="flex items-center justify-center xl:justify-start gap-2">
+                      <span className="text-white/60">{item.fieldName}:</span>
+                      <span className="text-md">{item.fieldValue}</span>
+                    </li>
+                  })}
+                </ul>
+              </div>
+            </TabsContent>
           </div>
         </Tabs>
       </div>
