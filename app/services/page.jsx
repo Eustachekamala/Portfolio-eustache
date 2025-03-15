@@ -6,31 +6,31 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "Web development",
+    title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tempora nam quae quam at? Inventore repudiandae.",
-    href: "",
+      "I create modern, responsive websites that are both functional and visually appealing. From personal blogs to dynamic web apps, I focus on clean code and seamless performance.",
+    href: "#web-development",
   },
   {
     num: "02",
     title: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tempora nam quae quam at? Inventore repudiandae.",
-    href: "",
+      "I design intuitive and engaging interfaces that prioritize user experience and aesthetics. Every detail is crafted to align with your vision and user needs.",
+    href: "#ui-ux-design",
   },
   {
     num: "03",
     title: "Logo Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tempora nam quae quam at? Inventore repudiandae.",
-    href: "",
+      "I craft unique and memorable logos that capture the essence of your brand. My designs are simple, versatile, and tailored to make a lasting impression.",
+    href: "#logo-design",
   },
   {
     num: "04",
     title: "SEO",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tempora nam quae quam at? Inventore repudiandae.",
-    href: "",
+      "I optimize websites to improve search engine rankings and drive organic traffic. Using proven strategies, I ensure your site is discoverable and performs well.",
+    href: "#seo",
   },
 ];
 

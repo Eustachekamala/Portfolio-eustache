@@ -1,8 +1,7 @@
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
-import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
+import DownloadButton from "@/components/DownloadButton";
 
 export default function Home() {
   return (
@@ -20,35 +19,26 @@ export default function Home() {
             </div>
             <p className="max-w-[500px] mb-9 text-white/80">
               I excel at creating elegant digital experiences and I am
-              proficient in varius programing languages and technologies
+              proficient in various programming languages and technologies.
             </p>
             {/**btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex
-            items-center gap-2 w-[300px]"
-              >
-                <span>Dowload CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <DownloadButton /> {/* Use the new component */}
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
-                  iconStyles="w-9 h-9 border border-accent-600 rounded-full flex 
-              justify-center items-center text-accent-600 text-base hover:bg-accent-600 hover:text-primary hover:transition-all duration-500"
+                  iconStyles="w-9 h-9 border border-accent-600 rounded-full flex justify-center items-center text-accent-600 text-base hover:bg-accent-600 hover:text-primary hover:transition-all duration-500"
                 />
               </div>
             </div>
           </div>
           {/**Photo */}
           <div className="order-1 xl:order-none bg-black/50 rounded-full xl:mb-0">
-            <Photo/>
+            <Photo />
           </div>
         </div>
       </div>
-      <Stats/>
+      <Stats />
     </section>
   );
 }

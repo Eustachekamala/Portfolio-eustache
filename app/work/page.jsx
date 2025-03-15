@@ -16,31 +16,31 @@ const projects = [
     num: "01",
     category: "fullstack",
     title: "project 1",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem natus doloremque repellat minima eos nisi, voluptas dolores, architecto ex minus labore fugiat deserunt obcaecati dolor.",
+    description: "FreshGo is a modern grocery shopping website designed to enhance your shopping experience. With features like recipe generation, a shopping cart, and item filtering, freshGo makes grocery shopping efficient and enjoyable. Additionally, users can discover drink recipes to complement their meals.",
     stack: [{ name: "React 5" }, { name: "Tailwin Css" }, { name: "Python(Flask)" }, {name : "sqlLite"}],
-    image: "/assets/work/image.png",
+    image: "/assets/works/work1.png",
     live: "https://freshgo-app.vercel.app",
-    github: "",
+    github: "https://github.com/Eustachekamala/Fresh-go-app",
   },
   {
     num: "02",
     category: "fullstack",
     title: "project 2",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem natus doloremque repellat minima eos nisi, voluptas dolores, architecto ex minus labore fugiat deserunt obcaecati dolor.",
+    description: "The POS Restaurant App is a full-stack application designed to streamline restaurant operations. It provides features for order management, inventory tracking, and sales reporting.",
     stack: [{ name: "React.js" }, { name: "Tailwind.css" },{ name: "Express Js"}, { name: "MongoDB" },],
-    image: "/assets/work/image.png",
-    live: "",
-    github: "",
+    image: "/assets/works/work3.png",
+    live: "https://pos-restaurant-xi.vercel.app",
+    github: "https://github.com/Eustachekamala/POS-Restaurant",
   },
   {
     num: "03",
     category: "fullstack",
     title: "project 3",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem natus doloremque repellat minima eos nisi, voluptas dolores, architecto ex minus labore fugiat deserunt obcaecati dolor.",
+    description: "The E-Commerce project is a full-stack application that allows users to browse and purchase products from a variety of online stores.",
     stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Express.js"}, {name : "MongoDB"}],
-    image: "/assets/work/image.png",
-    live: "",
-    github: "",
+    image: "/assets/works/work2.png",
+    live: "https://e-commerce-azure-five.vercel.app",
+    github: "https://github.com/Eustachekamala/E-Commerce",
   },
 ];
 
@@ -65,7 +65,7 @@ const Works = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[4]">
-          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
+          <div className="w-full xl:w-[45%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/** Outline num */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
@@ -128,7 +128,7 @@ const Works = () => {
             </div>
           </div>
 
-          <div className="w-full xl:w-[50%]">
+          <div className="w-full xl:w-[55%]">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
@@ -150,7 +150,7 @@ const Works = () => {
                         src={project.image}
                         alt={project.title}
                         fill
-                        className="object-cover"
+                        className="object-contain"
                       />
                     </div>
                     </div>
