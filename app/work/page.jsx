@@ -73,7 +73,7 @@ const Works = () => {
               </div>
 
               {/** Project category */}
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent-500 transition-all duration-500 capitalize">
+              <h2 className="xl:text-[42px] text-3xl font-bold leading-none text-white group-hover:text-accent-500 transition-all duration-500 capitalize">
                 {project.category} project
               </h2>
 
@@ -145,14 +145,14 @@ const Works = () => {
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
 
                     {/** image*/}
-                    <div className="relative w-full h-full">
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
+                    <div className="relative w-full pt-[56.25%] overflow-hidden">
+                        <Image
+                          src={project.image}
+                          alt={project.title}
+                          fill
+                          className="absolute top-0 left-0 w-full h-full object-cover"
+                        />
+                      </div>
                     </div>
                   </SwiperSlide>
                 );

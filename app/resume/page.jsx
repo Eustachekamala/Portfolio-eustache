@@ -41,7 +41,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About me",
   description:
-    "I am a passionate and detail-oriented software engineer with expertise in full-stack development, specializing in Python (Flask, Django) and JavaScript (React, Node.js). With over 4 years of experience, I thrive on solving complex problems and delivering scalable, user-centric solutions. I am fluent in English, French, and Swahili, and I am always eager to learn and adapt to new technologies.",
+    "I am a passionate and detail-oriented software engineer with expertise in full-stack development, specializing in Python (Flask, Django) and JavaScript (React, Node.js). With over 2 years of experience, I thrive on solving complex problems and delivering scalable, user-centric solutions. I am fluent in English, French, and Swahili, and I am always eager to learn and adapt to new technologies.",
   info: [
     {
       fieldName: "Name",
@@ -53,7 +53,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "4+ Years",
+      fieldValue: "2+ Years",
     },
     {
       fieldName: "Nationality",
@@ -79,26 +79,26 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "I have worked on a variety of projects, from freelance web development to full-stack roles, delivering high-quality solutions for clients and companies. My experience spans frontend and backend development, database optimization, and team collaboration.",
+    "I have worked on a variety of projects, from freelance web development to full-stack roles, delivering high-quality solutions for clients. My experience spans frontend and backend development, database optimization, and team collaboration.",
   items: [
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer Freelance",
-      duration: "2022 - Present",
+      company: "Self Employed",
+      position: "Full-stack Developer Freelance",
+      duration: "2022 - present",
     },
     {
-      company: "Web Design Studio",
-      position: "Front-End Developer Intern",
+      company: "Tech Solutions Inc.",
+      position: "Frontend Developer Freelance",
       duration: "2021 - 2022",
     },
     {
-      company: "E-commerce Startup",
-      position: "Freelance Web Developer",
+      company: "Web Design Studio",
+      position: "Front-End Developer",
       duration: "2020 - 2021",
     },
     {
-      company: "Digital Agency",
-      position: "UX/UI Designer",
+      company: "BEET Agency",
+      position: "Electronic Technician",
       duration: "2019 - 2020",
     },
   ],
