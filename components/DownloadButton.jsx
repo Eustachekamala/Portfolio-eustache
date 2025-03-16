@@ -18,7 +18,7 @@ export default function DownloadButton() {
       className="uppercase flex items-center gap-2 w-[300px]"
       onClick={handleDownloadCV}
     >
-      <span>Download CV</span>
+      <span>Download Resume</span>
       <FiDownload className="text-xl" />
     </Button>
   );

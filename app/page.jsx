@@ -23,7 +23,7 @@ export default function Home() {
             </p>
             {/**btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <DownloadButton /> {/* Use the new component */}
+              <DownloadButton />
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
