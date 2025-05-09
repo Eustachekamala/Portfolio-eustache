@@ -11,7 +11,7 @@ export default function Home() {
           {/**Text */}
           <div className="flex flex-col gap-4 mt-4 md:mt-0 text-center xl:text-left order-2 xl:order-none">
             <div className="flex flex-col">
-              <span className="text-2xl">Software Developer</span>
+              <span className="text-2xl">Software Engineer</span>
               <h1 className="h1 mt-4">
                 Hello I'm <br />{" "}
                 <span className="text-accent-500">Eustache Kamala</span>

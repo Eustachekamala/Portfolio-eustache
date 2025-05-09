@@ -9,23 +9,18 @@ import {
   FaPython,
   FaJava,
   FaGitAlt,
+  FaLeaf,
 } from "react-icons/fa";
 
 import {
   SiTailwindcss,
-  SiNextdotjs,
-  SiCplusplus,
-  SiDjango,
   SiFlask,
-  SiFirebase,
-  SiJenkins,
   SiLinux,
   SiMongodb,
   SiPostgresql,
   SiPostman,
   SiRedux,
   SiTypescript,
-  SiExpress,
 } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -165,24 +160,12 @@ const skills = {
       name: "Tailwind CSS",
     },
     {
-      icon: <SiNextdotjs />,
-      name: "Next.js",
-    },
-    {
       icon: <FaNode />,
       name: "Node.js",
     },
     {
-      icon: <SiExpress />,
-      name: "Express.js",
-    },
-    {
       icon: <FaPython />,
       name: "Python",
-    },
-    {
-      icon: <SiDjango />,
-      name: "Django",
     },
     {
       icon: <SiFlask />,
@@ -193,24 +176,16 @@ const skills = {
       name: "Java",
     },
     {
-      icon: <SiCplusplus />,
-      name: "C++",
+      icon: <FaLeaf />,
+      name: "Spring Boot",
     },
     {
       icon: <FaFigma />,
       name: "Figma",
     },
     {
-      icon: <SiFirebase />,
-      name: "Firebase",
-    },
-    {
       icon: <FaGitAlt />,
       name: "Git",
-    },
-    {
-      icon: <SiJenkins />,
-      name: "Jenkins",
     },
     {
       icon: <SiLinux />,
