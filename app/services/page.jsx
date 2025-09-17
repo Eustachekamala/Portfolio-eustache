@@ -4,34 +4,46 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const services = [
-  {
-    num: "01",
-    title: "Web Development",
-    description:
-      "I create modern, responsive websites that are both functional and visually appealing. From personal blogs to dynamic web apps, I focus on clean code and seamless performance.",
-    href: "#web-development",
-  },
-  {
-    num: "02",
-    title: "UI/UX Design",
-    description:
-      "I design intuitive and engaging interfaces that prioritize user experience and aesthetics. Every detail is crafted to align with your vision and user needs.",
-    href: "#ui-ux-design",
-  },
-  {
-    num: "03",
-    title: "Logo Design",
-    description:
-      "I craft unique and memorable logos that capture the essence of your brand. My designs are simple, versatile, and tailored to make a lasting impression.",
-    href: "#logo-design",
-  },
-  {
-    num: "04",
-    title: "SEO",
-    description:
-      "I optimize websites to improve search engine rankings and drive organic traffic. Using proven strategies, I ensure your site is discoverable and performs well.",
-    href: "#seo",
-  },
+    {
+        num: "01",
+        title: "Backend Development",
+        description:
+            "I build robust and scalable backend systems using Java and Spring Boot. My focus is on clean architecture, secure APIs, and seamless integration with databases and external services.",
+        href: "#backend-development",
+    },
+    {
+        num: "02",
+        title: "Frontend Development",
+        description:
+            "I create modern, responsive, and dynamic user interfaces with React. I prioritize performance, accessibility, and delivering intuitive user experiences.",
+        href: "#frontend-development",
+    },
+    {
+        num: "03",
+        title: "Mobile Development",
+        description:
+            "I develop cross-platform mobile applications using Flutter, ensuring smooth performance and consistent design across Android and iOS devices.",
+        href: "#mobile-development",
+    },
+    {
+        num: "04",
+        title: "DevOps & Cloud",
+        description:
+            "I implement CI/CD pipelines, containerization with Docker, and cloud deployment on AWS to deliver reliable, scalable, and production-ready applications.",
+        href: "#devops-cloud",
+    },
+    {
+        num: "05",
+        title: "UI/UX Design",
+        description: "I design intuitive and engaging interfaces that prioritize user experience and aesthetics. Every detail is crafted to align with your vision and user needs.",
+        href: "#ui-ux-design",
+    },
+    {
+        num: "06",
+        title: "Software Engineering & System Design",
+        description: "I apply core software engineering principles, including clean architecture, object-oriented design, and system design patterns, to build maintainable and scalable solutions.",
+        href: "#software-engineering"
+    }
 ];
 
 const Services = () => {
