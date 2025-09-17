@@ -6,7 +6,6 @@ import {
   FaNode,
   FaReact,
   FaFigma,
-  FaPython,
   FaJava,
   FaGitAlt,
   FaLeaf,
@@ -22,15 +21,16 @@ import {
   SiRedux,
   SiTypescript,
 } from "react-icons/si";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../components/ui/tabs";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@radix-ui/react-tooltip";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { ScrollArea } from "../../components/ui/scroll-area";
 import { motion } from "framer-motion";
+import VideoModal from "../../components/VideoModal";
 
 //about data
 const about = {
@@ -164,14 +164,6 @@ const skills = {
       name: "Node.js",
     },
     {
-      icon: <FaPython />,
-      name: "Python",
-    },
-    {
-      icon: <SiFlask />,
-      name: "Flask",
-    },
-    {
       icon: <FaJava />,
       name: "Java",
     },
@@ -209,6 +201,7 @@ const skills = {
     },
   ],
 };
+const videoUrl = "";
 
 const Resume = () => {
   return (
@@ -217,7 +210,7 @@ const Resume = () => {
       animate={{
         opacity: 1,
         transition: {
-          delay: 2.4,
+          delay: 0.15,
           duration: 0.4,
           ease: "easeIn",
         },
@@ -315,6 +308,23 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+                  {/* Video OR Coming Soon */}
+                  <div className="max-w-2xl mx-auto">
+                      {videoUrl ? (
+                          <VideoModal
+                              videoUrl={videoUrl}
+                              trigger={
+                                  <div className="w-full aspect-video bg-black/20 rounded-2xl flex items-center justify-center cursor-pointer hover:bg-black/40 transition">
+                                      <span className="text-white font-semibold p-4">▶ Play Elevator Pitch</span>
+                                  </div>
+                              }
+                          />
+                      ) : (
+                          <div className="w-full aspect-video bg-black/10 rounded-2xl flex items-center justify-center text-white/60 border border-dashed border-white/30 p-4">
+                              🎥 Elevator Pitch Coming Soon
+                          </div>
+                      )}
+                  </div>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[700px] mx-auto xl:mx-0">
                   {about.info.map((item, index) => {
                     return (

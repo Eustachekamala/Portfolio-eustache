@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../../components/ui/tooltip";
 import { Navigation, Pagination } from "swiper/modules"; 
 import Link from "next/link";
 import Image from "next/image";
 import "swiper/css";
-import WorkSliderBtns from "@/components/WorkSliderBtns";
+import WorkSliderBtns from "../../components/WorkSliderBtns";
 
 const projects = [
   {
@@ -59,7 +59,7 @@ const Works = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition : {
-        delay : 2.4, duration : 0.4, ease : "easeIn"
+        delay : 0.15, duration : 0.4, ease : "easeIn"
       } }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >

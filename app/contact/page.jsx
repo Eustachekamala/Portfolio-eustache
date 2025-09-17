@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Input } from "../../components/ui/input";
+import { Textarea } from "../../components/ui/textarea";
 import {
   Select,
   SelectContent,
@@ -10,10 +10,10 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "../../components/ui/select";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../components/ui/button";
 
 const info = [
   {
@@ -42,6 +42,34 @@ const Contact = () => {
     service: "",
     message: "",
   });
+
+    const services = [
+        {
+            num: "01",
+            title: "Backend Development",
+        },
+        {
+            num: "02",
+            title: "Frontend Development",
+        },
+        {
+            num: "03",
+            title: "Mobile Development",
+        },
+        {
+            num: "04",
+            title: "DevOps & Cloud",
+        },
+        {
+            num: "05",
+            title: "UI/UX Design"
+        },
+        {
+            num: "06",
+            title: "Software Engineering & System Design",
+        }
+    ];
+
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
@@ -95,7 +123,7 @@ const Contact = () => {
       animate={{
         opacity: 1,
         transition: {
-          delay: 2.4,
+          delay: 0.15,
           duration: 0.4,
           ease: "easeIn",
         },
@@ -157,9 +185,11 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="Web Development">Web Development</SelectItem>
-                    <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
-                    <SelectItem value="Logo Design">Logo Design</SelectItem>
+                    {services.map((service, index) => (
+                      <SelectItem key={service.num} value={service.title}>
+                        {service.title}
+                      </SelectItem>
+                    ))}
                   </SelectGroup>
                 </SelectContent>
               </Select>

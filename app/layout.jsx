@@ -1,31 +1,29 @@
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import PageTransition from "@/components/PageTransition";
-import StairEffect from "@/components/StairTransition";
+import Header from "../components/Header";
+import PageTransition from "../components/PageTransition";
 
 const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  variable: "--font-jetbrainsMono",
+    subsets: ["latin"],
+    weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+    variable: "--font-jetbrainsMono",
 });
 
 export const metadata = {
-  title: "Eustache-portfolio",
-  description: "My simple portfolio",
-  icons: {
-    icon: "/favicon.png",
-  },
+    title: "Eustache-portfolio",
+    description: "My simple portfolio",
+    icons: {
+        icon: "/favicon.png",
+    },
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en" data-theme="dark">
-      <body className={jetbrainsMono.variable}>
+    return (
+        <html lang="en" data-theme="dark">
+        <body className={jetbrainsMono.variable}>
         <Header />
-        <StairEffect />
         <PageTransition>{children}</PageTransition>
-      </body>
-    </html>
-  );
+        </body>
+        </html>
+    );
 }

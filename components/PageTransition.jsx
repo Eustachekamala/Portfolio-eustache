@@ -4,22 +4,21 @@ import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
 const PageTransition = ({ children }) => {
-  const pathname = usePathname();
-  return (
-    <AnimatePresence mode="wait">
-      <div key={pathname}>
-        <motion.div
-          initial={{ opacity: 1 }}
-          animate={{
-            opacity: 0,
-            transition: { delay: 1, duration: 0.4, ease: "circInOut" },
-          }}
-          className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"
-        />
-        {children}
-      </div>
-    </AnimatePresence>
-  );
+    const pathname = usePathname();
+
+    return (
+        <AnimatePresence mode="wait" initial={false}>
+            <motion.div
+                key={pathname}
+                initial={{ opacity: 0, scale: 0.98 }}
+                animate={{ opacity: 1, scale: 1, transition: { duration: 0.15, ease: "easeOut" } }}
+                exit={{ opacity: 0, scale: 0.98, transition: { duration: 0.15, ease: "easeIn" } }}
+                className="min-h-screen"
+            >
+                {children}
+            </motion.div>
+        </AnimatePresence>
+    );
 };
 
 export default PageTransition;
