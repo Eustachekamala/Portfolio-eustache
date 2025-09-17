@@ -16,15 +16,15 @@ const Photo = () => {
             {/* Profile Image */}
             <motion.div
                 initial={{ opacity: 0 }}
-                animate={mounted ? { opacity: 1 } : { opacity: 0 }}
-                transition={{ delay: 2, duration: 0.4, ease: "easeInOut" }}
+                animate={mounted ? { opacity: 1 } : { opacity: 0.2 }}
+                transition={{ duration: 0.5 }}
                 className="relative w-[296px] h-[296px] xl:w-[498px] xl:h-[498px] z-10"
             >
                 <Image
                     src="/assets/eustache.png"
                     fill
                     alt="Profile photo"
-                    className="rounded-full opacity-80 object-cover"
+                    className="rounded-full opacity-80 object-contain"
                 />
             </motion.div>
 
