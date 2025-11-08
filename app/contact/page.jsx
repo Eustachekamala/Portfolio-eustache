@@ -46,28 +46,28 @@ const Contact = () => {
     const services = [
         {
             num: "01",
-            title: "Backend Development",
-        },
-        {
-            num: "02",
             title: "Frontend Development",
         },
         {
+            num: "02",
+            title: "Backend Development",
+        },
+        // {
+        //     num: "03",
+        //     title: "Mobile Development",
+        // },
+        {
             num: "03",
-            title: "Mobile Development",
+            title: "UI/UX Design"
         },
         {
             num: "04",
             title: "DevOps & Cloud",
         },
-        {
-            num: "05",
-            title: "UI/UX Design"
-        },
-        {
-            num: "06",
-            title: "Software Engineering & System Design",
-        }
+        // {
+        //     num: "06",
+        //     title: "Software Engineering & System Design",
+        // }
     ];
 
   const [loading, setLoading] = useState(false);
