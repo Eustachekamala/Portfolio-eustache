@@ -1,36 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 
 const Stats = () => {
-  const [commitCount, setCommitCount] = useState(0);
-
-  useEffect(() => {
-    const fetchCommits = async () => {
-      try {
-        const res = await fetch("/api/github-stats", { cache: "no-store" });
-
-        if (!res.ok) {
-          console.error("Failed to fetch commits:", await res.text());
-          return;
-        }
-
-        const data = await res.json();
-        setCommitCount(data?.commits ?? 0);
-      } catch (error) {
-        console.error("Error fetching commits:", error);
-      }
-    };
-
-    fetchCommits();
-  }, []);
 
   const stats = [
     { num: 2, text: "Years of experience" },
     { num: 26, text: "Projects completed" },
     { num: 16, text: "Technologies mastered" },
-    { num: commitCount, text: "Code commits" },
+    { num: 1365, text: "Code commits" },
   ];
 
   return (
