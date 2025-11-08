@@ -22,9 +22,8 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       data-theme="dark"
-      className="overflow-hidden h-screen w-screen" 
     >
-      <body className={`${jetbrainsMono.variable} overflow-hidden h-screen w-screen`}>
+      <body className={jetbrainsMono.variable}>
         <Header />
         <PageTransition>{children}</PageTransition>
       </body>

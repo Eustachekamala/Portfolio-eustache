@@ -38,7 +38,7 @@ export default function Home() {
                         </div>
                     </div>
                     {/** Photo */}
-                    <div className="order-1 xl:order-none bg-black/50 rounded-full xl:mb-0">
+                    <div className="order-1 xl:order-none bg-black/50 py-1 rounded-full xl:mb-0">
                         <Photo />
                     </div>
                 </div>
