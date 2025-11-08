@@ -24,7 +24,7 @@ const Photo = () => {
                     src="/assets/eustache.png"
                     fill
                     alt="Profile photo"
-                    className="rounded-full opacity-80 object-contain"
+                    className="rounded-full opacity-80 object-cover"
                 />
             </motion.div>
 
