@@ -6,17 +6,17 @@ import Link from "next/link";
 const services = [
     {
         num: "01",
-        title: "Backend Development",
-        description:
-            "I build robust and scalable backend systems using Java and Spring Boot. My focus is on clean architecture, secure APIs, and seamless integration with databases and external services.",
-        href: "#backend-development",
-    },
-    {
-        num: "02",
         title: "Frontend Development",
         description:
             "I create modern, responsive, and dynamic user interfaces with React. I prioritize performance, accessibility, and delivering intuitive user experiences.",
         href: "#frontend-development",
+    },
+    {
+        num: "02",
+        title: "Backend Development",
+        description:
+            "I build robust and scalable backend systems using Java and Spring Boot. My focus is on clean architecture, secure APIs, and seamless integration with databases and external services.",
+        href: "#backend-development",
     },
     // {
     //     num: "03",
