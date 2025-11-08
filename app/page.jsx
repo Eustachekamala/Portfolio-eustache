@@ -6,22 +6,21 @@ import DownloadButton from "../components/DownloadButton";
 export default function Home() {
     return (
         <section className="h-full">
-            <div className="container mx-auto h-full">
-                <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-4 xl:pb-6">
+            <div className="container mx-auto flex items-center">
+                <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-4 xl:pb-6 overflow-hidden ">
                     {/** Text */}
-                    <div className="flex flex-col gap-4 mt-4 md:mt-4 text-center xl:text-left order-2 xl:order-none">
+                    <div className="flex flex-col gap-4 mt-8 md:mt-4 text-center xl:text-left order-2 xl:order-none">
                         <div className="flex flex-col">
                             <span className="text-3xl">Software Engineer</span>
-                            <h1 className="h1 mt-4">
+                            <h1 className="h1 mt-8">
                                 Hello, I&apos;m <br />{" "}
                                 <span className="text-accent-500">Eustache Kamala</span>
                             </h1>
                         </div>
-                        <p className="max-w-[500px] mb-9 text-white/80">
+                        <p className="max-w-[500px] mb-8 text-white/80">
                             I specialize in building scalable web and mobile applications.
-                            With expertise in <span className="text-accent-500">Java (Spring Boot)</span>,{" "}
-                            <span className="text-accent-500">React</span>, and{" "}
-                            <span className="text-accent-500">Flutter</span>, I deliver
+                            With expertise in <span className="text-accent-500">Java (Spring Boot)</span>{" "}
+                            and <span className="text-accent-500">React</span>. I deliver
                             end-to-end solutions from backend to frontend. Currently, I&apos;m
                             expanding my skills in <span className="text-accent-500">DevOps</span> and{" "}
                             <span className="text-accent-500">AWS Cloud</span> to strengthen my

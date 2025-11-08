@@ -18,12 +18,18 @@ const services = [
             "I create modern, responsive, and dynamic user interfaces with React. I prioritize performance, accessibility, and delivering intuitive user experiences.",
         href: "#frontend-development",
     },
+    // {
+    //     num: "03",
+    //     title: "Mobile Development",
+    //     description:
+    //         "I develop cross-platform mobile applications using Flutter, ensuring smooth performance and consistent design across Android and iOS devices.",
+    //     href: "#mobile-development",
+    // },
     {
         num: "03",
-        title: "Mobile Development",
-        description:
-            "I develop cross-platform mobile applications using Flutter, ensuring smooth performance and consistent design across Android and iOS devices.",
-        href: "#mobile-development",
+        title: "UI/UX Design",
+        description: "I design intuitive and engaging interfaces that prioritize user experience and aesthetics. Every detail is crafted to align with your vision and user needs.",
+        href: "#ui-ux-design",
     },
     {
         num: "04",
@@ -32,18 +38,12 @@ const services = [
             "I implement CI/CD pipelines, containerization with Docker, and cloud deployment on AWS to deliver reliable, scalable, and production-ready applications.",
         href: "#devops-cloud",
     },
-    {
-        num: "05",
-        title: "UI/UX Design",
-        description: "I design intuitive and engaging interfaces that prioritize user experience and aesthetics. Every detail is crafted to align with your vision and user needs.",
-        href: "#ui-ux-design",
-    },
-    {
-        num: "06",
-        title: "Software Engineering & System Design",
-        description: "I apply core software engineering principles, including clean architecture, object-oriented design, and system design patterns, to build maintainable and scalable solutions.",
-        href: "#software-engineering"
-    }
+    // {
+    //     num: "06",
+    //     title: "Software Engineering & System Design",
+    //     description: "I apply core software engineering principles, including clean architecture, object-oriented design, and system design patterns, to build maintainable and scalable solutions.",
+    //     href: "#software-engineering"
+    // }
 ];
 
 const Services = () => {
