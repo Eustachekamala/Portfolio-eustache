@@ -60,7 +60,7 @@ const ComingSoonModal = ({ isOpen, onClose }) => {
 const about = {
   title: "About Me",
   description:
-    "I am a passionate and detail-oriented software engineer with expertise in full-stack development, specializing in Java (Spring Boot) for backend and JavaScript (React) for frontend. With over 2 years of experience, I focus on building scalable, secure, and user-centric applications. Currently, I am expanding my skills in DevOps (Docker, CI/CD, AWS) and mobile development with Flutter to strengthen my full-stack and cloud expertise. I am fluent in English, French, and Swahili, and I am always eager to learn and adapt to new technologies.",
+    "I am a passionate and detail-oriented software engineer with expertise in full-stack development, specializing in Java (Spring Boot) for backend and TypeScript (React) for frontend. With over 2 years of experience, I focus on building scalable, secure, and user-centric applications. Currently, I am expanding my skills in DevOps (Docker, CI/CD, AWS Cloud Computing) to strengthen my full-stack and cloud expertise. I am fluent in English, French, and Swahili, and I am always eager to learn and adapt to new technologies.",
   info: [
     { fieldName: "Name", fieldValue: "Eustache Kamala" },
     { fieldName: "Phone", fieldValue: "(+254) 719 405 934" },
@@ -83,7 +83,7 @@ const education = {
       institution: "ALX Africa",
       degree: "AWS Cloud Computing Certificate",
       duration: "2025 (Ongoing)",
-      certificateLink: "", // ⛔ Not yet available
+      certificateLink: "",
     },
     {
       institution: "ALX Africa",
