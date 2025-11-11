@@ -7,12 +7,12 @@ export default function Home() {
     return (
         <section className="h-full">
             <div className="container mx-auto flex items-center">
-                <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-4 xl:pb-6 overflow-hidden ">
+                <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-4 xl:pb-6 p-2 ">
                     {/** Text */}
-                    <div className="flex flex-col gap-4 mt-8 md:mt-4 text-center xl:text-left order-2 xl:order-none">
+                    <div className="flex flex-col gap-6 mt-8 md:mt-4 text-center xl:text-left order-2 xl:order-none">
                         <div className="flex flex-col">
                             <span className="text-3xl">Software Engineer</span>
-                            <h1 className="h1 mt-8">
+                            <h1 className="text-6xl mt-6">
                                 Hello, I&apos;m <br />{" "}
                                 <span className="text-accent-500">Eustache Kamala</span>
                             </h1>
