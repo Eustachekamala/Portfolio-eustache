@@ -18,15 +18,16 @@ export default function Home() {
                             </h1>
                         </div>
                         <p className="max-w-[500px] mb-8 text-white/80">
-                            Dynamic Software Engineer specializing in scalable web solutions that drive 
-                            client satisfaction. I craft robust backend systems with{" "}
-                            <span className="text-accent-500">Java and Spring Boot</span>, intuitive 
-                            interfaces with <span className="text-accent-500">React and Tailwind CSS</span>, 
-                            and deploy production-ready applications using{" "}
-                            <span className="text-accent-500">Docker and AWS</span>. Passionate about 
-                            delivering secure, maintainable, and user-centered solutions that align with 
-                            business objectives and enhance user experiences.
+                            Building ideas into code. I design and develop scalable, elegant web
+                            solutions using{" "}
+                            <span className="text-accent-500">Java, Spring Boot, React, and Tailwind CSS</span>{" "}
+                            — blending solid backend logic with engaging user experiences. With{" "}
+                            <span className="text-accent-500">Docker</span> and{" "}
+                            <span className="text-accent-500">AWS</span>, I ensure every app I deploy is fast,
+                            secure, and ready to grow. I believe in code that lasts, designs that connect,
+                            and teamwork that drives progress.
                         </p>
+
                         {/** Button and socials */}
                         <div className="flex flex-col xl:flex-row items-center gap-8">
                             <DownloadButton />

@@ -4,12 +4,10 @@ import {
   FaHtml5,
   FaCss3,
   FaJs,
-  FaNode,
   FaReact,
   FaFigma,
   FaJava,
   FaGitAlt,
-  FaLeaf,
   FaDocker,
   FaAws,
   FaGithub,
@@ -18,7 +16,6 @@ import {
 import {
   SiTailwindcss,
   SiLinux,
-  SiMongodb,
   SiPostgresql,
   SiPostman,
   SiTypescript,
@@ -65,7 +62,7 @@ const ComingSoonModal = ({ isOpen, onClose }) => {
 const about = {
   title: "About Me",
   description:
-    "Dynamic Software Engineer specializing in developing scalable web solutions that drive client satisfaction. Expertise encompasses backend technologies like Java and Spring Boot, alongside frontend frameworks such as React and Tailwind CSS. Proficient in crafting secure RESTful APIs and deploying applications using Docker and AWS, ensuring optimal performance and maintainability. Committed to delivering innovative, user-centered solutions that align with business objectives and enhance overall user experiences. I'm passionate about clean architecture, collaboration, and continuous learning.",
+    "As a dedicated Software Engineer, I specialize in creating robust and user-focused web applications that align technology with business goals. My toolkit includes Java and Spring Boot for backend systems, React and Tailwind CSS for dynamic frontends, and Docker with AWS for efficient deployments. I’m deeply passionate about clean code, maintainable architecture, and lifelong learning — always striving to deliver value through simplicity, precision, and innovation.",
   info: [
     { fieldName: "Name", fieldValue: "Eustache Katembo" },
     { fieldName: "Phone", fieldValue: "(+254) 719 405 934" },
@@ -76,6 +73,7 @@ const about = {
     { fieldName: "Location", fieldValue: "Nairobi, Kenya" },
   ],
 };
+
 
 // 🔹 Education data
 const education = {
@@ -107,12 +105,6 @@ const education = {
       degree: "Software Engineering Program",
       duration: "Oct 2024",
       certificateLink: "/assets/certificates/Eustache_Katembo-Moringa-Certificate.jpg",
-    },
-    {
-      institution: "Revival Academy, Beni",
-      degree: "Certificate of English Language",
-      duration: "2023",
-      certificateLink: "",
     },
     {
       institution: "Official University Of Ruwenzori (UOR)",
@@ -156,6 +148,7 @@ const skills = {
     { icon: <FaGitAlt />, name: "Git", category: "Version Control" },
     { icon: <FaGithub />, name: "GitHub", category: "Version Control" },
     { icon: <SiJenkins />, name: "Jenkins", category: "CI/CD" },
+    { icon: <SiLinux />, name: "Linux", category: "Operating Systems" },
     
     // Tools
     { icon: <FaFigma />, name: "Figma", category: "Design" },
@@ -175,20 +168,20 @@ const Resume = () => {
         opacity: 1,
         transition: { delay: 0.15, duration: 0.4, ease: "easeIn" },
       }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[80vh] flex items-center justify-center md:py-12 xl:py-0"
     >
       <ComingSoonModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
       <div className="container mx-auto px-4">
         <Tabs
           defaultValue="education"
-          className="flex flex-col justify-between xl:flex-row gap-[60px]"
+          className="flex flex-col justify-between xl:flex-row md:gap-[60px]"
         >
           {/* Sidebar */}
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="education">🎓 Education</TabsTrigger>
-            <TabsTrigger value="skills">🧠 Skills</TabsTrigger>
-            <TabsTrigger value="about">👤 About Me</TabsTrigger>
+            <TabsTrigger value="education">Education</TabsTrigger>
+            <TabsTrigger value="skills">Technical Skills</TabsTrigger>
+            <TabsTrigger value="about">About Me</TabsTrigger>
           </TabsList>
 
           {/* Main content */}
@@ -196,10 +189,12 @@ const Resume = () => {
             {/* Education Section */}
             <TabsContent className="w-full" value="education">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold text-accent-foreground">{education.title}</h3>
-                <p className="max-w-[600px] text-white/70 mx-auto xl:mx-0 leading-relaxed">
-                  {education.description}
-                </p>
+                <div className="text-center xl:text-left space-y-4"> 
+                  <h3 className="text-4xl font-bold">{education.title}</h3> 
+                  <p className="max-w-[600px] text-white/70 mx-auto xl:mx-0 leading-relaxed">
+                      {education.description}
+                  </p> 
+                </div>
 
                 <ScrollArea className="h-[400px] w-full pr-4">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
@@ -279,15 +274,12 @@ const Resume = () => {
             {/* About Me Section */}
             <TabsContent className="w-full text-center xl:text-left" value="about">
               <div className="flex flex-col gap-[30px]">
-                {/* Title */}
-                <h3 className="text-4xl font-bold text-accent-foreground">
-                  {about.title}
-                </h3>
-
-                {/* Description */}
-                <p className="max-w-[600px] text-white/70 mx-auto xl:mx-0 leading-relaxed">
-                  {about.description}
-                </p>
+                <div className="text-center xl:text-left space-y-4"> 
+                  <h3 className="text-4xl font-bold">{about.title}</h3> 
+                  <p className="max-w-[600px] text-white/70 mx-auto xl:mx-0 leading-relaxed">
+                      {about.description}
+                  </p> 
+                </div>
 
                 {/* Elevator Pitch Video */}
                 <div className="max-w-2xl mx-auto">
