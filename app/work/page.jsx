@@ -61,22 +61,7 @@ const projects = [
     image: "/assets/works/work1.png",
     live: "https://freshgo-app.vercel.app",
     github: "https://github.com/Eustachekamala/Fresh-go-app",
-  },
-  {
-    num: "04",
-    category: "Full-Stack",
-    title: "POS Restaurant Application",
-    description: "Full-stack point-of-sale system designed to streamline restaurant operations. Features order management, real-time inventory tracking, sales reporting, and table management. Built with modern web technologies for optimal performance.",
-    stack: [
-      { name: "React.js" }, 
-      { name: "Tailwind CSS" },
-      { name: "Express.js" }, 
-      { name: "MongoDB" }
-    ],
-    image: "/assets/works/work3.png",
-    live: "https://pos-restaurant-xi.vercel.app",
-    github: "https://github.com/Eustachekamala/POS-Restaurant",
-  },
+  }
 ];
 
 const Works = () => {
@@ -182,13 +167,13 @@ const Works = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide className="w-full" key={index}>
-                    <div className="md:h-[400px] h-[200px] relative group flex justify-center items-center rounded-lg bg-pink-50/10">
+                    <div className="md:h-[460px] h-[200px] relative group flex justify-center items-center rounded-lg bg-pink-50/10">
                     {/**overlay */}
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
 
                     {/** Live demo for backend projects with swagger, image for others, or coming soon */}
                     {project.status === "under-development" ? (
-                      <div className="relative w-full h-full flex items-center justify-center bg-gradient-to-br from-accent-500/20 to-purple-500/20">
+                      <div className="relative w-full h-full flex items-center justify-center bg-gradient-to-br from-accent-500/10 to-purple-500/10 rounded-lg overflow-hidden">
                         <div className="text-center z-20">
                           <h3 className="md:text-4xl text-xl font-bold text-white mb-4">🚧 Under Development</h3>
                           <p className="text-white/70 md:text-lg text-sm mb-2">Coming Soon</p>
