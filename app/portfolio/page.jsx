@@ -10,6 +10,10 @@ import {
   FaJava,
   FaGitAlt,
   FaLeaf,
+  FaDocker,
+  FaAws,
+  FaGithub,
+  FaDatabase,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -17,8 +21,9 @@ import {
   SiMongodb,
   SiPostgresql,
   SiPostman,
-  SiRedux,
   SiTypescript,
+  SiJenkins,
+  SiSpringboot,
 } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../components/ui/tabs";
 import {
@@ -31,7 +36,7 @@ import { ScrollArea } from "../../components/ui/scroll-area";
 import { motion } from "framer-motion";
 import VideoModal from "../../components/VideoModal";
 
-// 🔹 Modal for “Coming Soon”
+// 🔹 Modal for "Coming Soon"
 const ComingSoonModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
   return (
@@ -60,15 +65,15 @@ const ComingSoonModal = ({ isOpen, onClose }) => {
 const about = {
   title: "About Me",
   description:
-    "I am a passionate and detail-oriented software engineer with expertise in full-stack development, specializing in Java (Spring Boot) for backend and TypeScript (React) for frontend. With over 2 years of experience, I focus on building scalable, secure, and user-centric applications. Currently, I am expanding my skills in DevOps (Docker, CI/CD, AWS Cloud Computing) to strengthen my full-stack and cloud expertise. I am fluent in English, French, and Swahili, and I am always eager to learn and adapt to new technologies.",
+    "Dynamic Software Engineer specializing in developing scalable web solutions that drive client satisfaction. Expertise encompasses backend technologies like Java and Spring Boot, alongside frontend frameworks such as React and Tailwind CSS. Proficient in crafting secure RESTful APIs and deploying applications using Docker and AWS, ensuring optimal performance and maintainability. Committed to delivering innovative, user-centered solutions that align with business objectives and enhance overall user experiences. I'm passionate about clean architecture, collaboration, and continuous learning.",
   info: [
-    { fieldName: "Name", fieldValue: "Eustache Kamala" },
+    { fieldName: "Name", fieldValue: "Eustache Katembo" },
     { fieldName: "Phone", fieldValue: "(+254) 719 405 934" },
-    { fieldName: "Experience", fieldValue: "2+ Years" },
     { fieldName: "Nationality", fieldValue: "Congolese" },
     { fieldName: "Email", fieldValue: "eustachekamala.dev@gmail.com" },
     { fieldName: "Freelance", fieldValue: "Available" },
     { fieldName: "Languages", fieldValue: "English, French, Swahili" },
+    { fieldName: "Location", fieldValue: "Nairobi, Kenya" },
   ],
 };
 
@@ -77,7 +82,7 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My Education",
   description:
-    "I hold a Bachelor's degree in Computer Engineering and have completed several professional certifications in software development and cloud computing. My education reflects a strong foundation in full-stack engineering, backend development, and cloud technologies.",
+    "I hold a Bachelor's degree in Computer Engineering and have completed several professional certifications in software development, UX/UI design, and cloud computing. My education reflects a strong foundation in full-stack engineering, backend development, and cloud technologies.",
   items: [
     {
       institution: "ALX Africa",
@@ -86,54 +91,75 @@ const education = {
       certificateLink: "",
     },
     {
-      institution: "ALX Africa",
-      degree: "Professional Foundations Certificate",
-      duration: "2025",
-      certificateLink: "/assets/certificates/alx-professional-foundations.png",
-    },
-    {
-      institution: "Moringa School",
-      degree: "Certificate in Software Engineering (Full Stack Development)",
-      duration: "2024",
+      institution: "Moringa School & Flatiron School",
+      degree: "UX/UI Design Program",
+      duration: "Oct 2025",
       certificateLink: "",
     },
     {
-      institution: "Online Course",
-      degree: "Programming Course",
+      institution: "ALX Africa",
+      degree: "Professional Foundations Certificate",
+      duration: "Sept 2025",
+      certificateLink: "/assets/certificates/alx-professional-foundations.png",
+    },
+    {
+      institution: "Moringa School & Flatiron School",
+      degree: "Software Engineering Program",
+      duration: "Oct 2024",
+      certificateLink: "/assets/certificates/Eustache_Katembo-Moringa-Certificate.jpg",
+    },
+    {
+      institution: "Revival Academy, Beni",
+      degree: "Certificate of English Language",
       duration: "2023",
       certificateLink: "",
     },
     {
-      institution: "Official University Of Ruwenzori",
-      degree: "Bachelor's Degree in Computer Engineering",
-      duration: "2018 - 2021",
+      institution: "Official University Of Ruwenzori (UOR)",
+      degree: "Bachelor of Science in Computer Engineering",
+      duration: "2018 - 2022",
       certificateLink: "",
     },
   ],
 };
 
-// 🔹 Skills data (unchanged)
+// 🔹 Skills data - Updated to match resume
 const skills = {
   title: "My Skills",
   description:
-    "I specialize in a wide range of technologies, including frontend and backend development, database management, and design tools. My skills enable me to build robust, scalable, and user-friendly applications.",
+    "I specialize in a comprehensive range of technologies for full-stack development. From backend systems with Java and Spring Boot to modern frontend frameworks like React, along with DevOps tools for deployment and cloud infrastructure.",
   skillList: [
-    { icon: <FaHtml5 />, name: "HTML5" },
-    { icon: <FaCss3 />, name: "CSS3" },
-    { icon: <FaJs />, name: "JavaScript" },
-    { icon: <FaReact />, name: "React.js" },
-    { icon: <SiRedux />, name: "Redux" },
-    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
-    { icon: <FaNode />, name: "Node.js" },
-    { icon: <FaJava />, name: "Java" },
-    { icon: <FaLeaf />, name: "Spring Boot" },
-    { icon: <FaFigma />, name: "Figma" },
-    { icon: <FaGitAlt />, name: "Git" },
-    { icon: <SiLinux />, name: "Linux" },
-    { icon: <SiMongodb />, name: "MongoDB" },
-    { icon: <SiPostgresql />, name: "PostgreSQL" },
-    { icon: <SiPostman />, name: "Postman" },
-    { icon: <SiTypescript />, name: "TypeScript" },
+    // Languages
+    { icon: <FaJava />, name: "Java", category: "Languages" },
+    { icon: <FaJs />, name: "JavaScript", category: "Languages" },
+    { icon: <SiTypescript />, name: "TypeScript", category: "Languages" },
+    { icon: <FaDatabase />, name: "SQL", category: "Languages" },
+    
+    // Backend
+    { icon: <SiSpringboot />, name: "Spring Boot", category: "Backend" },
+    
+    // Frontend
+    { icon: <FaReact />, name: "React", category: "Frontend" },
+    { icon: <SiTailwindcss />, name: "Tailwind CSS", category: "Frontend" },
+    { icon: <FaHtml5 />, name: "HTML5", category: "Frontend" },
+    { icon: <FaCss3 />, name: "CSS3", category: "Frontend" },
+    
+    // State Management
+    { icon: <span className="text-4xl">🐻</span>, name: "Zustand", category: "State Management" },
+    
+    // Databases
+    { icon: <SiPostgresql />, name: "PostgreSQL", category: "Databases" },
+    
+    // DevOps & Cloud
+    { icon: <FaDocker />, name: "Docker", category: "DevOps" },
+    { icon: <FaAws />, name: "AWS", category: "Cloud" },
+    { icon: <FaGitAlt />, name: "Git", category: "Version Control" },
+    { icon: <FaGithub />, name: "GitHub", category: "Version Control" },
+    { icon: <SiJenkins />, name: "Jenkins", category: "CI/CD" },
+    
+    // Tools
+    { icon: <FaFigma />, name: "Figma", category: "Design" },
+    { icon: <SiPostman />, name: "Postman", category: "API Testing" },
   ],
 };
 
@@ -217,71 +243,86 @@ const Resume = () => {
                 </ScrollArea>
               </div>
             </TabsContent>
+            
             {/* Skills Section */}
             <TabsContent className="w-full" value="skills"> 
               <div className="flex flex-col gap-[30px]"> 
                 <div className="text-center xl:text-left space-y-4"> 
                   <h3 className="text-4xl font-bold">{skills.title}</h3> 
-                  <p className="max-w-[600px] text-white/70 mx-auto xl:mx-0 leading-relaxed"> {skills.description} </p> 
-                  </div> 
-                  <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-5 xl:gap-[30px]"> {skills.skillList.map((skill, index) => ( <li key={index} className="flex justify-center"> 
-                    <TooltipProvider delayDuration={100}> 
-                      <Tooltip> 
-                        <TooltipTrigger className="w-[80px] h-[80px] bg-[#232329] hover:bg-[#2c2c33] rounded-xl flex justify-center items-center group transition-all shadow-md shadow-black/20"> 
-                        <div className="text-4xl group-hover:text-accent-500 transition-all duration-300"> {skill.icon} </div> 
-                        </TooltipTrigger> <TooltipContent> <p className="text-primary uppercase bg-white/90 text-black text-xs px-3 py-1 rounded-lg font-medium"> {skill.name} </p> 
-                        </TooltipContent> </Tooltip> </TooltipProvider> </li> ))} 
-                  </ul> 
+                  <p className="max-w-[600px] text-white/70 mx-auto xl:mx-0 leading-relaxed">
+                    {skills.description}
+                  </p> 
                 </div> 
-          </TabsContent>
-          {/* About Me Section */}
-          <TabsContent className="w-full text-center xl:text-left" value="about">
-            <div className="flex flex-col gap-[30px]">
-              {/* Title */}
-              <h3 className="text-4xl font-bold text-accent-foreground">
-                {about.title}
-              </h3>
+                <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-5 xl:gap-[30px]">
+                  {skills.skillList.map((skill, index) => (
+                    <li key={index} className="flex justify-center"> 
+                      <TooltipProvider delayDuration={100}> 
+                        <Tooltip> 
+                          <TooltipTrigger className="w-[80px] h-[80px] bg-[#232329] hover:bg-[#2c2c33] rounded-xl flex justify-center items-center group transition-all shadow-md shadow-black/20"> 
+                            <div className="text-4xl group-hover:text-accent-500 transition-all duration-300">
+                              {skill.icon}
+                            </div> 
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p className="text-primary uppercase bg-white/90 text-black text-xs px-3 py-1 rounded-lg font-medium">
+                              {skill.name}
+                            </p> 
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </li>
+                  ))}
+                </ul> 
+              </div> 
+            </TabsContent>
+            
+            {/* About Me Section */}
+            <TabsContent className="w-full text-center xl:text-left" value="about">
+              <div className="flex flex-col gap-[30px]">
+                {/* Title */}
+                <h3 className="text-4xl font-bold text-accent-foreground">
+                  {about.title}
+                </h3>
 
-              {/* Description */}
-              <p className="max-w-[600px] text-white/70 mx-auto xl:mx-0 leading-relaxed">
-                {about.description}
-              </p>
+                {/* Description */}
+                <p className="max-w-[600px] text-white/70 mx-auto xl:mx-0 leading-relaxed">
+                  {about.description}
+                </p>
 
-              {/* Elevator Pitch Video */}
-              <div className="max-w-2xl mx-auto">
-                {videoUrl ? (
-                  <VideoModal
-                    videoUrl={videoUrl}
-                    trigger={
-                      <div className="w-full aspect-video bg-black/20 rounded-2xl flex items-center justify-center cursor-pointer hover:bg-black/40 transition">
-                        <span className="text-white font-semibold p-4">
-                          ▶ Play Elevator Pitch
-                        </span>
-                      </div>
-                    }
-                  />
-                ) : (
-                  <div className="w-full aspect-video bg-black/10 rounded-2xl flex items-center justify-center text-white/60 border border-dashed border-white/30 p-4">
-                    🎥 Elevator Pitch Coming Soon
-                  </div>
-                )}
+                {/* Elevator Pitch Video */}
+                <div className="max-w-2xl mx-auto">
+                  {videoUrl ? (
+                    <VideoModal
+                      videoUrl={videoUrl}
+                      trigger={
+                        <div className="w-full aspect-video bg-black/20 rounded-2xl flex items-center justify-center cursor-pointer hover:bg-black/40 transition">
+                          <span className="text-white font-semibold p-4">
+                            ▶ Play Elevator Pitch
+                          </span>
+                        </div>
+                      }
+                    />
+                  ) : (
+                    <div className="w-full aspect-video bg-black/10 rounded-2xl flex items-center justify-center text-white/60 border border-dashed border-white/30 p-4">
+                      🎥 Elevator Pitch Coming Soon
+                    </div>
+                  )}
+                </div>
+
+                {/* Personal Info */}
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[700px] mx-auto xl:mx-0">
+                  {about.info.map((item, index) => (
+                    <li
+                      key={index}
+                      className="flex items-center justify-center xl:justify-start gap-2"
+                    >
+                      <span className="text-white/60">{item.fieldName}:</span>
+                      <span className="text-md text-white">{item.fieldValue}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-
-              {/* Personal Info */}
-              <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[700px] mx-auto xl:mx-0">
-                {about.info.map((item, index) => (
-                  <li
-                    key={index}
-                    className="flex items-center justify-center xl:justify-start gap-2"
-                  >
-                    <span className="text-white/60">{item.fieldName}:</span>
-                    <span className="text-md text-white">{item.fieldValue}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </TabsContent>
-
+            </TabsContent>
           </div>
         </Tabs>
       </div>

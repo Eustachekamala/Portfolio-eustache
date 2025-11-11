@@ -12,35 +12,70 @@ import "swiper/css";
 import WorkSliderBtns from "../../components/WorkSliderBtns";
 
 const projects = [
+  // Backend Projects
   {
     num: "01",
-    category: "fullstack",
-    title: "project 1",
-    description: "FreshGo is a modern grocery shopping website designed to enhance your shopping experience. With features like recipe generation, a shopping cart, and item filtering, freshGo makes grocery shopping efficient and enjoyable. Additionally, users can discover drink recipes to complement their meals.",
-    stack: [{ name: "React 5" }, { name: "Tailwin Css" }, { name: "Python(Flask)" }, {name : "sqlLite"}],
+    category: "Backend",
+    title: "Job Application Management System",
+    description: "A comprehensive backend system for managing applicants, jobs, and job applications. Built with clean relational architecture and RESTful APIs. Features include applicant tracking, job posting management, application workflow automation, and Redis caching for improved performance.",
+    stack: [
+      { name: "Spring Boot" }, 
+      { name: "PostgreSQL" }, 
+      { name: "Docker" }, 
+      { name: "OpenAPI/Swagger" },
+      { name: "Redis" }
+    ],
+    image: "/assets/works/job-app-swagger.png", // Screenshot of Swagger UI
+    live: "https://job-application-management-system-latest-qvm4.onrender.com/swagger-ui/index.html",
+    github: "https://github.com/Eustachekamala/JobApplicationManagement",
+  },
+  {
+    num: "02",
+    category: "Backend",
+    title: "Employee Management System",
+    description: "Full-featured backend application for managing employees, departments, and attendance with role-based access control. Includes automated reporting, data analytics, and comprehensive HR operations management. Built with Spring Boot and containerized with Docker. Currently under development.",
+    stack: [
+      { name: "Spring Boot" }, 
+      { name: "PostgreSQL" }, 
+      { name: "Docker" }, 
+      { name: "Swagger" }
+    ],
+    image: "/assets/works/coming-soon.png", // Placeholder for under development
+    live: "",
+    github: "https://github.com/Eustachekamala/EMS",
+    status: "under-development"
+  },
+  
+  // Full-Stack Projects
+  {
+    num: "03",
+    category: "Full-Stack",
+    title: "FreshGo - Grocery Shopping Platform",
+    description: "Modern grocery shopping website designed to enhance shopping experience. Features include AI-powered recipe generation, intelligent shopping cart, advanced item filtering, and drink recipe discovery. Built with React and Flask for seamless user experience.",
+    stack: [
+      { name: "React" }, 
+      { name: "Tailwind CSS" }, 
+      { name: "Python (Flask)" }, 
+      { name: "SQLite" }
+    ],
     image: "/assets/works/work1.png",
     live: "https://freshgo-app.vercel.app",
     github: "https://github.com/Eustachekamala/Fresh-go-app",
   },
   {
-    num: "02",
-    category: "fullstack",
-    title: "project 2",
-    description: "The POS Restaurant App is a full-stack application designed to streamline restaurant operations. It provides features for order management, inventory tracking, and sales reporting.",
-    stack: [{ name: "React.js" }, { name: "Tailwind.css" },{ name: "Express Js"}, { name: "MongoDB" },],
+    num: "04",
+    category: "Full-Stack",
+    title: "POS Restaurant Application",
+    description: "Full-stack point-of-sale system designed to streamline restaurant operations. Features order management, real-time inventory tracking, sales reporting, and table management. Built with modern web technologies for optimal performance.",
+    stack: [
+      { name: "React.js" }, 
+      { name: "Tailwind CSS" },
+      { name: "Express.js" }, 
+      { name: "MongoDB" }
+    ],
     image: "/assets/works/work3.png",
     live: "https://pos-restaurant-xi.vercel.app",
     github: "https://github.com/Eustachekamala/POS-Restaurant",
-  },
-  {
-    num: "03",
-    category: "fullstack",
-    title: "project 3",
-    description: "The E-Commerce project is a full-stack application that allows users to browse and purchase products from a variety of online stores.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Express.js"}, {name : "MongoDB"}],
-    image: "/assets/works/work2.png",
-    live: "https://e-commerce-azure-five.vercel.app",
-    github: "https://github.com/Eustachekamala/E-Commerce",
   },
 ];
 
@@ -77,17 +112,20 @@ const Works = () => {
                 {project.category} project
               </h2>
 
+              {/** Project title */}
+              <h3 className="text-2xl font-semibold text-accent-500">
+                {project.title}
+              </h3>
+
               {/** Project description */}
-              <p className="text-white/60">{project.description}</p>
+              <p className="text-white/60 leading-relaxed">{project.description}</p>
 
               {/** Stack */}
-              <ul className="flex gap-4">
+              <ul className="flex flex-wrap gap-2">
                 {project.stack.map((item, index) => {
                   return (
-                    <li key={index} className="text-xl text-accent-500">
+                    <li key={index} className="text-sm px-3 py-1 bg-accent-500/10 text-accent-500 rounded-full">
                       {item.name}
-                      {/** Remove comma */}
-                      {index !== project.stack.length - 1 && ","}
                     </li>
                   );
                 })}
@@ -98,32 +136,36 @@ const Works = () => {
 
               {/** Buttons */}
               <div className="flex items-center gap-4">
-                <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent-500" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.live && (
+                  <Link href={project.live} target="_blank" rel="noopener noreferrer">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent-500" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
 
                 {/** Github project button */}
-                <Link href={project.github}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent-500" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repo</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.github && (
+                  <Link href={project.github} target="_blank" rel="noopener noreferrer">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent-500" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Github repo</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
@@ -144,8 +186,38 @@ const Works = () => {
                     {/**overlay */}
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
 
-                    {/** image*/}
-                    <div className="relative w-full pt-[56.25%] overflow-hidden">
+                    {/** Live demo for backend projects with swagger, image for others, or coming soon */}
+                    {project.status === "under-development" ? (
+                      <div className="relative w-full h-full flex items-center justify-center bg-gradient-to-br from-accent-500/20 to-purple-500/20">
+                        <div className="text-center z-20">
+                          <h3 className="text-4xl font-bold text-white mb-4">🚧 Under Development</h3>
+                          <p className="text-white/70 text-lg">Coming Soon</p>
+                        </div>
+                      </div>
+                    ) : project.category === "Backend" && project.live ? (
+                      <div className="relative w-full h-full flex items-center justify-center bg-gradient-to-br from-accent-500/10 to-purple-500/10 rounded-lg overflow-hidden">
+                        <div className="absolute inset-0 bg-black/20 z-0"></div>
+                        <div className="relative z-20 text-center px-8 py-12 max-w-md">
+                          <div className="text-7xl mb-6 animate-pulse">📡</div>
+                          <h3 className="text-4xl font-bold text-white mb-4 leading-tight">
+                            Live API Demo
+                          </h3>
+                          <p className="text-white/80 text-lg mb-8 leading-relaxed">
+                            Click the button below to explore the interactive Swagger UI documentation
+                          </p>
+                          <a 
+                            href={project.live} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center gap-3 bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-lg transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
+                          >
+                            <BsArrowUpRight className="text-2xl" />
+                            Open Swagger UI
+                          </a>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="relative w-full pt-[56.25%] overflow-hidden">
                         <Image
                           src={project.image}
                           alt={project.title}
@@ -153,6 +225,7 @@ const Works = () => {
                           className="absolute top-0 left-0 w-full h-full object-cover"
                         />
                       </div>
+                    )}
                     </div>
                   </SwiperSlide>
                 );
