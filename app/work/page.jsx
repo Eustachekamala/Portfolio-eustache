@@ -182,7 +182,7 @@ const Works = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide className="w-full" key={index}>
-                    <div className="h-[460px] relative group flex justify-center items-center rounded-lg bg-pink-50/10">
+                    <div className="md:h-[400px] h-[200px] relative group flex justify-center items-center rounded-lg bg-pink-50/10">
                     {/**overlay */}
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
 
@@ -190,28 +190,27 @@ const Works = () => {
                     {project.status === "under-development" ? (
                       <div className="relative w-full h-full flex items-center justify-center bg-gradient-to-br from-accent-500/20 to-purple-500/20">
                         <div className="text-center z-20">
-                          <h3 className="text-4xl font-bold text-white mb-4">🚧 Under Development</h3>
-                          <p className="text-white/70 text-lg">Coming Soon</p>
+                          <h3 className="md:text-4xl text-xl font-bold text-white mb-4">🚧 Under Development</h3>
+                          <p className="text-white/70 md:text-lg text-sm mb-2">Coming Soon</p>
                         </div>
                       </div>
                     ) : project.category === "Backend" && project.live ? (
                       <div className="relative w-full h-full flex items-center justify-center bg-gradient-to-br from-accent-500/10 to-purple-500/10 rounded-lg overflow-hidden">
                         <div className="absolute inset-0 bg-black/20 z-0"></div>
                         <div className="relative z-20 text-center px-8 py-12 max-w-md">
-                          <div className="text-7xl mb-6 animate-pulse">📡</div>
-                          <h3 className="text-4xl font-bold text-white mb-4 leading-tight">
+                          <h3 className="md:text-4xl text-xl font-bold text-white mb-4 leading-tight">
                             Live API Demo
                           </h3>
-                          <p className="text-white/80 text-lg mb-8 leading-relaxed">
+                          <p className="text-white/80 md:text-lg text-sm md:mb-8 mb-2 leading-relaxed">
                             Click the button below to explore the interactive Swagger UI documentation
                           </p>
                           <a 
                             href={project.live} 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center gap-3 bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-lg transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
+                            className="inline-flex items-center justify-center gap-3 bg-accent-500 hover:bg-accent-600 text-white md:px-8 px-2 md:py-4 py-2 rounded-lg transition-all duration-300 font-semibold md:text-lg text-sm shadow-lg hover:shadow-xl hover:scale-105"
                           >
-                            <BsArrowUpRight className="text-2xl" />
+                            <BsArrowUpRight className="md:text-2xl text-sm" />
                             Open Swagger UI
                           </a>
                         </div>
