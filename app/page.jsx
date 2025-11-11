@@ -12,19 +12,19 @@ export default function Home() {
                     <div className="flex flex-col gap-6 mt-8 md:mt-4 text-center xl:text-left order-2 xl:order-none">
                         <div className="flex flex-col">
                             <span className="text-3xl">Software Engineer</span>
-                            <h1 className="text-6xl mt-6">
+                            <h1 className="md:text-6xl h1 mt-6">
                                 Hello, I&apos;m <br />{" "}
                                 <span className="text-accent-500">Eustache Kamala</span>
                             </h1>
                         </div>
                         <p className="max-w-[500px] mb-8 text-white/80">
-                            Building ideas into code. I design and develop scalable, elegant web
+                            I build ideas into code. I design and develop scalable, elegant web
                             solutions using{" "}
                             <span className="text-accent-500">Java, Spring Boot, React, and Tailwind CSS</span>{" "}
                             — blending solid backend logic with engaging user experiences. With{" "}
                             <span className="text-accent-500">Docker</span> and{" "}
                             <span className="text-accent-500">AWS</span>, I ensure every app I deploy is fast,
-                            secure, and ready to grow. I believe in code that lasts, designs that connect,
+                            secure, and ready to scale. I believe in code that lasts, designs that connect,
                             and teamwork that drives progress.
                         </p>
 
