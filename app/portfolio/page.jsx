@@ -92,7 +92,7 @@ const education = {
       institution: "Moringa School & Flatiron School",
       degree: "UX/UI Design Program",
       duration: "Oct 2025",
-      certificateLink: "/assets/certificates/Eustache_Katembo-Moringa-Certificate_UI&UX",
+      certificateLink: "/assets/certificates/Eustache_Katembo-Moringa-Certificate_UI&UX.jpg",
     },
     {
       institution: "ALX Africa",
