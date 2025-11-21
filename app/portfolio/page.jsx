@@ -92,7 +92,7 @@ const education = {
       institution: "Moringa School & Flatiron School",
       degree: "UX/UI Design Program",
       duration: "Oct 2025",
-      certificateLink: "",
+      certificateLink: "/assets/certificates/Eustache_Katembo-Moringa-Certificate_UI&UX",
     },
     {
       institution: "ALX Africa",
@@ -104,7 +104,7 @@ const education = {
       institution: "Moringa School & Flatiron School",
       degree: "Software Engineering Program",
       duration: "Oct 2024",
-      certificateLink: "/assets/certificates/Eustache_Katembo-Moringa-Certificate.jpg",
+      certificateLink: "/assets/certificates/Eustache_Katembo-Moringa-Certificate_SDE.jpg",
     },
     {
       institution: "Official University Of Ruwenzori (UOR)",
