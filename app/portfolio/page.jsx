@@ -80,11 +80,17 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My Education",
   description:
-    "I hold a Bachelor's degree in Computer Engineering and have completed several professional certifications in software development, UX/UI design, and cloud computing. My education reflects a strong foundation in full-stack engineering, backend development, and cloud technologies.",
+    "With a Bachelor's degree in Computer Engineering and multiple professional certifications across cloud computing, UX/UI design, and software engineering, my educational journey reflects a strong commitment to technical excellence and continuous professional growth. I focus on mastering technologies that empower me to build impactful, scalable, and user-centered digital solutions.",
   items: [
     {
       institution: "ALX Africa",
-      degree: "AWS Cloud Computing Certificate",
+      degree: "AWS Solutions Architect (Associate)",
+      duration: "2025 (Ongoing)",
+      certificateLink: "",
+    },
+    {
+      institution: "ALX Africa",
+      degree: "AWS Cloud Practitioner",
       duration: "2025 (Ongoing)",
       certificateLink: "",
     },
@@ -92,24 +98,27 @@ const education = {
       institution: "Moringa School & Flatiron School",
       degree: "UX/UI Design Program",
       duration: "Oct 2025",
-      certificateLink: "/assets/certificates/Eustache_Katembo-Moringa-Certificate_UI&UX.jpg",
+      certificateLink:
+        "/assets/certificates/Eustache_Katembo-Moringa-Certificate_UI&UX.jpg",
     },
     {
       institution: "ALX Africa",
       degree: "Professional Foundations Certificate",
       duration: "Sept 2025",
-      certificateLink: "/assets/certificates/alx-professional-foundations.png",
+      certificateLink:
+        "/assets/certificates/alx-professional-foundations.png",
     },
     {
       institution: "Moringa School & Flatiron School",
       degree: "Software Engineering Program",
       duration: "Oct 2024",
-      certificateLink: "/assets/certificates/Eustache_Katembo-Moringa-Certificate_SDE.jpg",
+      certificateLink:
+        "/assets/certificates/Eustache_Katembo-Moringa-Certificate_SDE.jpg",
     },
     {
-      institution: "Official University Of Ruwenzori (UOR)",
+      institution: "Official University of Ruwenzori (UOR)",
       degree: "Bachelor of Science in Computer Engineering",
-      duration: "2018 - 2022",
+      duration: "2018 – 2022",
       certificateLink: "",
     },
   ],
