@@ -6,7 +6,7 @@ import { FiDownload } from "react-icons/fi";
 export default function DownloadButton() {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/assets/Eustache_Katembo_Resume.pdf";
+    link.href = "/assets/resume/Eustache_Katembo_Resume.pdf";
     link.download = "Eustache_Katembo_Resume.pdf";
     link.click();
   };

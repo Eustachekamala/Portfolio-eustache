@@ -17,15 +17,13 @@ export default function Home() {
                                 <span className="text-accent-500">Eustache Kamala</span>
                             </h1>
                         </div>
-                        <p className="max-w-[500px] mb-8 text-white/80">
-                            I build ideas into code. I design and develop scalable, elegant web
-                            solutions using{" "}
-                            <span className="text-accent-500">Java, Spring Boot, React, and Tailwind CSS</span>{" "}
-                            — blending solid backend logic with engaging user experiences. With{" "}
-                            <span className="text-accent-500">Docker</span> and{" "}
-                            <span className="text-accent-500">AWS</span>, I ensure every app I deploy is fast,
-                            secure, and ready to scale. I believe in code that lasts, designs that connect,
-                            and teamwork that drives progress.
+                        <p className="text-base md:text-lg leading-relaxed text-white/80 max-w-xl mb-8">
+                            I engineer scalable, high-performance web solutions using{" "}
+                            <span className="font-semibold text-accent-500">Java, Spring Boot, and React</span>. 
+                            Bridging robust backend architecture with intuitive frontends, I leverage{" "}
+                            <span className="font-semibold text-accent-500">Docker</span> and{" "}
+                            <span className="font-semibold text-accent-500">AWS</span> to deliver secure, 
+                            production-ready deployments designed for growth.
                         </p>
 
                         {/** Button and socials */}
