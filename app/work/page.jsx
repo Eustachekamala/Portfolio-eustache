@@ -5,7 +5,6 @@ import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../../components/ui/tooltip";
-import { Navigation, Pagination } from "swiper/modules"; 
 import Link from "next/link";
 import Image from "next/image";
 import "swiper/css";
@@ -175,7 +174,7 @@ const Works = () => {
                     {project.status === "under-development" ? (
                       <div className="relative w-full h-full flex items-center justify-center bg-gradient-to-br from-accent-500/10 to-purple-500/10 rounded-lg overflow-hidden">
                         <div className="text-center z-20">
-                          <h3 className="md:text-4xl text-xl font-bold text-white mb-4">🚧 Under Development</h3>
+                          <h3 className="md:text-4xl text-xl font-bold text-white mb-4">Under Development</h3>
                           <p className="text-white/70 md:text-lg text-sm mb-2">Coming Soon</p>
                         </div>
                       </div>

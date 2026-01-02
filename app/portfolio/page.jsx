@@ -43,7 +43,7 @@ const ComingSoonModal = ({ isOpen, onClose }) => {
         animate={{ opacity: 1, y: 0 }}
         className="bg-[#1e1e23] p-6 rounded-2xl shadow-lg text-center max-w-sm w-full border border-white/10"
       >
-        <h3 className="text-2xl font-semibold text-accent-500 mb-2">🚧 Coming Soon</h3>
+        <h3 className="text-2xl font-semibold text-accent-500 mb-2">Coming Soon</h3>
         <p className="text-white/70 text-sm mb-6">
           This certificate is not yet available. Please check back later!
         </p>
@@ -223,7 +223,7 @@ const Resume = () => {
                           <p>{item.duration}</p>
                         </div>
 
-                        {/* 🔹 Certificate or Coming Soon */}
+                        {/* Certificate or Coming Soon */}
                         {item.certificateLink ? (
                           <a
                             href={item.certificateLink}
@@ -231,14 +231,14 @@ const Resume = () => {
                             rel="noopener noreferrer"
                             className="mt-2 text-sm text-accent-500 hover:text-accent-400 underline-offset-2 hover:underline transition"
                           >
-                            📜 View Certificate
+                            View Certificate
                           </a>
                         ) : (
                           <button
                             onClick={() => setIsModalOpen(true)}
                             className="mt-2 text-sm text-accent-500 hover:text-accent-400 underline-offset-2 hover:underline transition"
                           >
-                            📜 View Certificate
+                            View Certificate
                           </button>
                         )}
                       </li>
