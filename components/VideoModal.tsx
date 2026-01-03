@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import { useState } from "react";
 
-const VideoModal = ({ videoUrl, trigger }) => {
+const VideoModal: React.FC<{ videoUrl: string; trigger: React.ReactNode }> = ({ videoUrl, trigger }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (

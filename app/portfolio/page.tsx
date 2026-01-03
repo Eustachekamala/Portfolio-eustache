@@ -34,7 +34,7 @@ import { motion } from "framer-motion";
 import VideoModal from "../../components/VideoModal";
 
 // 🔹 Modal for "Coming Soon"
-const ComingSoonModal = ({ isOpen, onClose }) => {
+const ComingSoonModal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
   return (
     <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50">

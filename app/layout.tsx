@@ -17,7 +17,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
@@ -25,7 +25,9 @@ export default function RootLayout({ children }) {
     >
       <body className={jetbrainsMono.variable}>
         <Header />
-        <PageTransition>{children}</PageTransition>
+        <main className="pt-[72px] md:pt-[84px]">
+          <PageTransition>{children}</PageTransition>
+        </main>
       </body>
     </html>
   );

@@ -41,9 +41,9 @@ const MobileNav = () => {
             <SheetTitle>Mobile Navigation</SheetTitle>
         </VisuallyHidden>
         {/** Logo */}
-        <div style={{ marginTop: "5rem", marginBottom: "4rem" }} className="text-center text-2xl">
+        <div className="mt-20 mb-16 text-center">
           <Link href="/">
-            <h1 className="text-4xl  font-semibold">
+            <h1 className="text-4xl font-semibold">
               Eustache<span className="text-accent-500">.</span>
             </h1>
           </Link>

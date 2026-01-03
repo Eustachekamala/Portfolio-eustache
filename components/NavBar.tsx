@@ -29,14 +29,17 @@ const links = [
 
 const NavBar = () => {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
-    <nav className="flex gap-8">
+    <nav className="flex gap-4 md:gap-8 items-center">
       {links.map((link) => {
+        const isActive = link.path === pathname;
         return (
-          <Link key={link.name} className={`${link.path === pathname && "text-accent-500 border-b-2 border-accent-600"}
-          capitalize font-medium hover:text-accent-600 hover:transition-all hover:duration-500`} href={link.path}>
+          <Link
+            key={link.name}
+            className={`capitalize font-medium text-sm md:text-base transition-colors duration-200 ${isActive ? 'text-accent-500 after:block after:h-0.5 after:bg-accent-600 after:mt-1' : 'text-white/80 hover:text-accent-500'}`}
+            href={link.path}
+          >
             {link.name}
           </Link>
         );

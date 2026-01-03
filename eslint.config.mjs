@@ -3,6 +3,10 @@ const require = createRequire(import.meta.url);
 
 // Minimal flat config to avoid compatibility issues with FlatCompat and ensure ESLint runs.
 export default [
+  // Ensure generated files and dependencies are ignored early and always
+  {
+    ignores: ['.next/**', '**/.next/**', 'node_modules/**']
+  },
   {
     files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
