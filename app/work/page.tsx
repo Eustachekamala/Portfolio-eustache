@@ -31,22 +31,6 @@ const projects: Project[] = [
   // Backend Projects
   {
     num: "01",
-    category: "Backend",
-    title: "Job Application Management System",
-    description: "A comprehensive backend system for managing applicants, jobs, and job applications. Built with clean relational architecture and RESTful APIs. Features include applicant tracking, job posting management, application workflow automation, and Redis caching for improved performance.",
-    stack: [
-      { name: "Spring Boot" },
-      { name: "PostgreSQL" },
-      { name: "Docker" },
-      { name: "OpenAPI/Swagger" },
-      { name: "Redis" }
-    ],
-    image: "/assets/works/job-app-swagger.png", // Screenshot of Swagger UI
-    live: "https://job-application-management-system-latest-qvm4.onrender.com/swagger-ui/index.html",
-    github: "https://github.com/Eustachekamala/JobApplicationManagement",
-  },
-  {
-    num: "02",
     category: "Full-Stack",
     title: "Employee Management System",
     description: "Full-featured backend application for managing employees, departments, and attendance with role-based access control. Includes automated reporting, data analytics, and comprehensive HR operations management. Built with Spring Boot and containerized with Docker. Currently under development.",
@@ -67,7 +51,7 @@ const projects: Project[] = [
 
   // Full-Stack Projects
   {
-    num: "03",
+    num: "02",
     category: "Full-Stack",
     title: "FreshGo - Grocery Shopping Platform",
     description: "Modern grocery shopping website designed to enhance shopping experience. Features include AI-powered recipe generation, intelligent shopping cart, advanced item filtering, and drink recipe discovery. Built with React and Flask for seamless user experience.",
@@ -80,7 +64,23 @@ const projects: Project[] = [
     image: "/assets/works/work1.png",
     live: "https://freshgo-app.vercel.app",
     github: "https://github.com/Eustachekamala/Fresh-go-app",
-  }
+  },
+  {
+    num: "03",
+    category: "Backend",
+    title: "Job Application Management System",
+    description: "A comprehensive backend system for managing applicants, jobs, and job applications. Built with clean relational architecture and RESTful APIs. Features include applicant tracking, job posting management, application workflow automation, and Redis caching for improved performance.",
+    stack: [
+      { name: "Spring Boot" },
+      { name: "PostgreSQL" },
+      { name: "Docker" },
+      { name: "OpenAPI/Swagger" },
+      { name: "Redis" }
+    ],
+    image: "/assets/works/job-app-swagger.png", // Screenshot of Swagger UI
+    live: "https://job-application-management-system-latest-qvm4.onrender.com/swagger-ui/index.html",
+    github: "https://github.com/Eustachekamala/JobApplicationManagement",
+  },
 ];
 
 const Works = () => {
@@ -102,7 +102,7 @@ const Works = () => {
           delay: 0.15, duration: 0.4, ease: "easeIn"
         }
       }}
-      className="min-h-[80vh] flex flex-col justify-center xl:py-12 xl:px-0"
+      className="min-h-[80vh] flex flex-col justify-center xl:px-0"
     >
       <div className="container mx-auto px-4 xl:px-0">
         <div className="flex flex-col xl:flex-row xl:gap-[30px] gap-6">

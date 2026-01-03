@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <body className={jetbrainsMono.variable}>
         <Header />
-        <main className="pt-[72px] md:pt-[84px]">
+        <main className="pt-[12px]">
           <PageTransition>{children}</PageTransition>
         </main>
       </body>
