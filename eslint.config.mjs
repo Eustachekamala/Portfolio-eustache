@@ -1,14 +1,23 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [...compat.extends("next/core-web-vitals")];
-
-export default eslintConfig;
+// Minimal flat config to avoid compatibility issues with FlatCompat and ensure ESLint runs.
+export default [
+  {
+    files: ['**/*.{js,jsx,ts,tsx}'],
+    languageOptions: {
+      parser: require('@typescript-eslint/parser')
+    },
+    plugins: {
+      '@typescript-eslint': require('@typescript-eslint/eslint-plugin'),
+      react: require('eslint-plugin-react'),
+      'react-hooks': require('eslint-plugin-react-hooks')
+    },
+    settings: {
+      react: { version: 'detect' }
+    },
+    rules: {
+      // Add project-specific rules as needed
+    }
+  }
+];

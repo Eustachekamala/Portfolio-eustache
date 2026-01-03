@@ -5,16 +5,16 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 
-@theme{
+@theme {
   --breakpoint-*: initial;
-  --breakpoint-sm : 480px;
-  --breakpoint-md : 768px;
-  --breakpoint-lg : 976px;
-  --breakpoint-xl : 1200px;
-  --color-primary : #1c1c22;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1200px;
+  --color-primary: #1c1c22;
   --color-accent-600: #38a55d;
   --color-accent-500: #00e187;
-  --container-center : true;
+  --container-center: true;
   --font-primary: var(--font-jetbrainsMono);
 }
 
@@ -30,10 +30,20 @@ body {
 }
 
 .container {
-  padding: 1rem;
+  max-width: 1200px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
 /* 
 * {
   box-sizing: border-box;
@@ -162,12 +172,15 @@ a {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply font-primary bg-primary leading-loose;
   }
+
   .h1 {
     @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
   }
+
   /* .h1 {
     @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
   }
@@ -182,5 +195,5 @@ a {
   .text-outline-hover {
     -webkit-text-stroke: 1px #00ff99
   }
-  
+
 }
