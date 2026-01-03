@@ -36,7 +36,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="min-h-[80vh] flex justify-center py-12 xl:py-0">
+    <section className="min-h-[80vh] flex justify-center py-12 xl:py-0  md:mt-0 lg:mt-6">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
@@ -52,7 +52,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex-1 flex flex-col justify-center gap-6 group"
+              className="flex-1 flex flex-col justify-center gap-4 group"
             >
               {/* Top */}
               <div className="w-full flex justify-between items-center">

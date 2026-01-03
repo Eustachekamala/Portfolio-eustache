@@ -62,7 +62,7 @@ const ComingSoonModal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ i
 const about = {
   title: "About Me",
   description:
-    "As a dedicated Software Engineer, I specialize in creating robust and user-focused web applications that align technology with business goals. My toolkit includes Java and Spring Boot for backend systems, React and Tailwind CSS for dynamic frontends, and Docker with AWS for efficient deployments. I’m deeply passionate about clean code, maintainable architecture, and lifelong learning — always striving to deliver value through simplicity, precision, and innovation.",
+    "As a dedicated Software Engineer, I specialize in creating robust and user-focused web applications that align technology with business goals. My toolkit includes Java and Spring Boot for backend systems, React and Tailwind CSS for dynamic frontends, and Docker with AWS for efficient deployments. I’m deeply passionate about clean code, maintainable architecture, and lifelong learning always striving to deliver value through simplicity, precision, and innovation.",
   info: [
     { fieldName: "Name", fieldValue: "Eustache Katembo" },
     { fieldName: "Phone", fieldValue: "(+254) 719 405 934" },
@@ -194,13 +194,13 @@ const Resume = () => {
           </TabsList>
 
           {/* Main content */}
-          <div className="min-h-[70vh] w-full md:mt-0 mt-10">
+          <div className="min-h-[70vh] w-full md:mt-0 mt-10 mb-10">
             {/* Education Section */}
             <TabsContent className="w-full" value="education">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <div className="text-center xl:text-left space-y-4"> 
                   <h3 className="text-4xl font-bold">{education.title}</h3> 
-                  <p className="max-w-[600px] text-white/70 mx-auto xl:mx-0 leading-relaxed">
+                  <p className="max-w-[600px] text-white/70 mx-auto xl:mx-0 leading-relaxed text-left">
                       {education.description}
                   </p> 
                 </div>
@@ -253,7 +253,7 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px]"> 
                 <div className="text-center xl:text-left space-y-4"> 
                   <h3 className="text-4xl font-bold">{skills.title}</h3> 
-                  <p className="max-w-[600px] text-white/70 mx-auto xl:mx-0 leading-relaxed">
+                  <p className="max-w-[600px] text-white/70 mx-auto xl:mx-0 leading-relaxed text-left">
                     {skills.description}
                   </p> 
                 </div> 
@@ -285,7 +285,7 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px]">
                 <div className="text-center xl:text-left space-y-4"> 
                   <h3 className="text-4xl font-bold">{about.title}</h3> 
-                  <p className="max-w-[600px] text-white/70 mx-auto xl:mx-0 leading-relaxed">
+                  <p className="max-w-[600px] text-white/70 mx-auto xl:mx-0 leading-relaxed text-left">
                       {about.description}
                   </p> 
                 </div>
@@ -311,11 +311,11 @@ const Resume = () => {
                 </div>
 
                 {/* Personal Info */}
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[700px] mx-auto xl:mx-0">
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-4 max-w-[700px] mx-auto xl:mx-0">
                   {about.info.map((item, index) => (
                     <li
                       key={index}
-                      className="flex items-center justify-center xl:justify-start gap-2"
+                      className="flex items-center justify-start xl:justify-start gap-2"
                     >
                       <span className="text-white/60">{item.fieldName}:</span>
                       <span className="text-md text-white">{item.fieldValue}</span>

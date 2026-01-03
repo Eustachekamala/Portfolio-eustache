@@ -32,8 +32,8 @@ const projects: Project[] = [
   {
     num: "01",
     category: "Full-Stack",
-    title: "Employee Management System",
-    description: "Full-featured backend application for managing employees, departments, and attendance with role-based access control. Includes automated reporting, data analytics, and comprehensive HR operations management. Built with Spring Boot and containerized with Docker. Currently under development.",
+    title: "EMS Pro",
+    description: "EMS (Employee Management System) is a full-stack application for managing employees, jobs, attendance, and payroll. It integrates with RFID readers using JSerialComm to enable automated employee check-in and check-out, demonstrating real-world hardware–software integration.",
     stack: [
       { name: "Spring Boot" },
       { name: "PostgreSQL" },
@@ -43,7 +43,7 @@ const projects: Project[] = [
       { name: "Tailwind CSS" },
       { name: "TypeScript" }
     ],
-    image: "/assets/works/work4.png",
+    image: "/assets/works/work1.png",
     live: "https://ems-version-one.vercel.app",
     github: "https://github.com/Eustachekamala/EMS",
     // status: "under-development"
@@ -53,15 +53,18 @@ const projects: Project[] = [
   {
     num: "02",
     category: "Full-Stack",
-    title: "FreshGo - Grocery Shopping Platform",
-    description: "Modern grocery shopping website designed to enhance shopping experience. Features include AI-powered recipe generation, intelligent shopping cart, advanced item filtering, and drink recipe discovery. Built with React and Flask for seamless user experience.",
+    title: "Virunga ToolHub",
+    description: "Virunga ToolHub is a lightweight Spring Boot microservice that manages the product and tool catalog used by technicians in the Virunga factory. It handles stock in/out operations, tracks daily, weekly, and monthly usage history, and generates PDF reports for inventory monitoring and accountability.",
     stack: [
+      { name: "Spring Boot" },
+      { name: "PostgreSQL" },
+      { name: "Docker" },
+      { name: "Swagger" },
       { name: "React" },
       { name: "Tailwind CSS" },
-      { name: "Python (Flask)" },
-      { name: "SQLite" }
+      { name: "TypeScript" }
     ],
-    image: "/assets/works/work1.png",
+    image: "/assets/works/work2.png",
     live: "https://freshgo-app.vercel.app",
     github: "https://github.com/Eustachekamala/Fresh-go-app",
   },
@@ -69,7 +72,7 @@ const projects: Project[] = [
     num: "03",
     category: "Backend",
     title: "Job Application Management System",
-    description: "A comprehensive backend system for managing applicants, jobs, and job applications. Built with clean relational architecture and RESTful APIs. Features include applicant tracking, job posting management, application workflow automation, and Redis caching for improved performance.",
+    description: "A backend system for managing applicants, jobs, and applications, built with clean relational architecture and RESTful APIs, featuring workflow automation and Redis caching for improved performance.",
     stack: [
       { name: "Spring Boot" },
       { name: "PostgreSQL" },
@@ -77,7 +80,7 @@ const projects: Project[] = [
       { name: "OpenAPI/Swagger" },
       { name: "Redis" }
     ],
-    image: "/assets/works/job-app-swagger.png", // Screenshot of Swagger UI
+    image: "/assets/works/job-app-swagger.png",
     live: "https://job-application-management-system-latest-qvm4.onrender.com/swagger-ui/index.html",
     github: "https://github.com/Eustachekamala/JobApplicationManagement",
   },
@@ -104,9 +107,9 @@ const Works = () => {
       }}
       className="min-h-[80vh] flex flex-col justify-center xl:px-0"
     >
-      <div className="container mx-auto px-4 xl:px-0">
-        <div className="flex flex-col xl:flex-row xl:gap-[30px] gap-6">
-          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-1 xl:order-none">
+      <div className="container mx-auto px-4 xl:px-0 md:mt-0 lg:mt-6 lg:mb-12">
+        <div className="flex flex-col gap-6">
+          <div className="w-full flex flex-col justify-between order-2">
             <div className="flex flex-col gap-4 xl:gap-[30px]">
               {/** Outline num */}
               <div className="text-5xl sm:text-6xl xl:text-8xl leading-none font-extrabold text-transparent text-outline">
@@ -178,7 +181,7 @@ const Works = () => {
             </div>
           </div>
 
-          <div className="w-full xl:w-[50%] order-2 xl:order-none">
+          <div className="w-full order-1">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
@@ -190,38 +193,9 @@ const Works = () => {
                   <SwiperSlide className="w-full" key={index}>
                     <div className="h-full relative group flex justify-center items-center bg-pink-50/20 rounded-xl overflow-hidden">
                       {/**overlay */}
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-
-                      {/** Live demo for backend projects with swagger, image for others, or coming soon */}
-                      {project.status === "under-development" ? (
-                        <div className="relative w-full h-full flex items-center justify-center bg-gradient-to-br from-accent-500/10 to-purple-500/10">
-                          <div className="text-center z-20 p-4">
-                            <h3 className="text-2xl xl:text-4xl font-bold text-white mb-2 xl:mb-4">Under Development</h3>
-                            <p className="text-white/70 text-base xl:text-lg">Coming Soon</p>
-                          </div>
-                        </div>
-                      ) : project.category === "Backend" && project.live ? (
-                        <div className="relative w-full h-full flex items-center justify-center bg-gradient-to-br from-accent-500/10 to-purple-500/10">
-                          <div className="absolute inset-0 bg-black/20 z-0"></div>
-                          <div className="relative z-20 text-center px-4 py-6 xl:px-8 xl:py-12 max-w-md">
-                            <h3 className="text-2xl xl:text-4xl font-bold text-white mb-2 xl:mb-4 leading-tight">
-                              Live API Demo
-                            </h3>
-                            <p className="text-white/80 text-sm xl:text-lg mb-4 xl:mb-8 leading-relaxed">
-                              Click the button below to explore the interactive Swagger UI documentation
-                            </p>
-                            <a
-                              href={project.live}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center justify-center gap-2 xl:gap-3 bg-accent-500 hover:bg-accent-600 text-white px-4 py-2 xl:px-8 xl:py-4 rounded-lg transition-all duration-300 font-semibold text-sm xl:text-lg shadow-lg hover:shadow-xl hover:scale-105"
-                            >
-                              <BsArrowUpRight className="text-lg xl:text-2xl" />
-                              Open Swagger UI
-                            </a>
-                          </div>
-                        </div>
-                      ) : (
+                      <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                      {/**project image */}
+                      {project.image && (
                         <div className="relative w-full h-full">
                           <Image
                             src={project.image}

@@ -129,7 +129,7 @@ const Contact = () => {
         },
       }}
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto  md:mt-0 lg:mt-6">
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/**form */}
           <div className="xl:w-[54%] order-2 xl:order-none">

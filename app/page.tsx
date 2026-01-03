@@ -5,14 +5,14 @@ import DownloadButton from "../components/DownloadButton";
 
 export default function Home() {
     return (
-        <section className="h-full">
+        <section className="h-full mt-6">
             <div className="container mx-auto flex items-center">
                 <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-4 xl:pb-6 p-2 ">
                     {/** Text */}
                     <div className="flex flex-col gap-6 mt-8 md:mt-4 text-center xl:text-left order-2 xl:order-none">
                         <div className="flex flex-col">
                             <span className="text-3xl">Software Engineer</span>
-                            <h1 className="md:text-6xl h1 mt-6">
+                            <h1 className="md:text-6xl text-4xl h1 mt-6">
                                 Hello, I&apos;m <br />{" "}
                                 <span className="text-accent-500">Eustache Kamala</span>
                             </h1>
@@ -27,7 +27,7 @@ export default function Home() {
                         </p>
 
                         {/** Button and socials */}
-                        <div className="flex flex-col xl:flex-row items-center gap-8">
+                        <div className="flex flex-col xl:flex-row items-center gap-8 mb-8">
                             <DownloadButton />
                             <div className="mb-2 xl:mb-0">
                                 <Social
