@@ -30,19 +30,22 @@ const projects = [
   },
   {
     num: "02",
-    category: "Backend",
+    category: "Full-Stack",
     title: "Employee Management System",
     description: "Full-featured backend application for managing employees, departments, and attendance with role-based access control. Includes automated reporting, data analytics, and comprehensive HR operations management. Built with Spring Boot and containerized with Docker. Currently under development.",
     stack: [
       { name: "Spring Boot" }, 
       { name: "PostgreSQL" }, 
       { name: "Docker" }, 
-      { name: "Swagger" }
+      { name: "Swagger" },
+      { name: "React" },
+      { name: "Tailwind CSS" },
+      { name: "TypeScript" }
     ],
-    image: "/assets/works/coming-soon.png", // Placeholder for under development
-    live: "",
+    image: "/assets/works/work4.png",
+    live: "https://ems-version-one.vercel.app",
     github: "https://github.com/Eustachekamala/EMS",
-    status: "under-development"
+    // status: "under-development"
   },
   
   // Full-Stack Projects
