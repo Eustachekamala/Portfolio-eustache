@@ -194,7 +194,7 @@ const Resume = () => {
           </TabsList>
 
           {/* Main content */}
-          <div className="min-h-[70vh] w-full">
+          <div className="min-h-[70vh] w-full md:mt-0 mt-10">
             {/* Education Section */}
             <TabsContent className="w-full" value="education">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">

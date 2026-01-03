@@ -102,7 +102,7 @@ const Works = () => {
           delay: 0.15, duration: 0.4, ease: "easeIn"
         }
       }}
-      className="min-h-[80vh] flex flex-col justify-center py-8 xl:py-12 xl:px-0"
+      className="min-h-[80vh] flex flex-col justify-center xl:py-12 xl:px-0"
     >
       <div className="container mx-auto px-4 xl:px-0">
         <div className="flex flex-col xl:flex-row xl:gap-[30px] gap-6">
@@ -227,7 +227,7 @@ const Works = () => {
                             src={project.image}
                             alt={project.title}
                             fill
-                            className="object-cover"
+                            className="object-center"
                             priority
                           />
                         </div>
@@ -238,7 +238,7 @@ const Works = () => {
               })}
               {/**slider buttons */}
               <WorkSliderBtns
-                containerStyles="flex gap-2 absolute left-1/2 transform -translate-x-1/2 bottom-4 xl:bottom-0 xl:right-0 xl:left-auto xl:transform-none z-20 w-full xl:w-max justify-between xl:justify-none px-4 xl:px-0 pointer-events-none xl:pointer-events-auto"
+                containerStyles="flex gap-2 absolute mb-6 left-1/2 transform -translate-x-1/2 bottom-4 xl:bottom-0 xl:right-0 xl:left-auto xl:transform-none z-20 w-full xl:w-max justify-between xl:justify-none px-4 xl:px-0 pointer-events-none xl:pointer-events-auto"
                 btnStyles="bg-accent-500 hover:bg-accent-hover text-primary text-[20px] sm:text-[22px] w-[40px] h-[40px] sm:w-[44px] sm:h-[44px] flex justify-center items-center transition-all duration-500 pointer-events-auto rounded-lg"
               />
             </Swiper>
